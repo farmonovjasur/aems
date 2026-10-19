@@ -1,0 +1,13 @@
+dist
+node_modules
+package-lock.json
+coverage
+playwright-report
+test-results
+PLAN.md
+design.pen
+design.pen.bak
+3d_models
+img
+public
+src/styles/fonts.css

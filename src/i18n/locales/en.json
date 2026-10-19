@@ -1,0 +1,649 @@
+{
+  "meta": {
+    "title": "Amigos en Mundo — MBBS in Uzbekistan & Cancer Treatment in India",
+    "description": "Amigos en Mundo is a Bukhara-based consultancy. Student admission to MBBS in Uzbekistan and cancer treatment coordination in India — one team across two frontiers."
+  },
+  "common": {
+    "freeConsultation": "Free Consultation",
+    "talkWhatsapp": "Talk to us on WhatsApp",
+    "chatWhatsapp": "Chat on WhatsApp",
+    "requestCaseReview": "Request a case review",
+    "askWhatsapp": "Ask on WhatsApp",
+    "exploreMbbs": "Explore MBBS",
+    "applyNow": "Apply Now",
+    "register": "Register",
+    "talkToUs": "Talk to us",
+    "skipToContent": "Skip to content"
+  },
+  "nav": {
+    "about": "About us",
+    "cancer": "Cancer treatment",
+    "cancerTargeted": "Targeted therapy",
+    "cancerTargetedSub": "Lutetium-177 · Terbium-161 · Actinium-225",
+    "cancerCytotron": "Cytotron",
+    "cancerCytotronSub": "Non-invasive RFQMR device",
+    "cancerRadiation": "Radiation therapy",
+    "cancerRadiationSub": "Elekta Versa HD LINAC",
+    "caseReviewNote": "Case reviews by licensed physicians",
+    "menu": "Menu",
+    "close": "Close menu",
+    "affiliate": "Affiliate marketing",
+    "admission": "Student admission",
+    "registration": "Registration",
+    "contacts": "Contacts",
+    "cta": "Free Consultation"
+  },
+  "hero": {
+    "eyebrow": "AMIGOS EN MUNDO — EST. 2026 · BUKHARA",
+    "titleLine1": "Two frontiers.",
+    "titleAccent": "One",
+    "titleLine2": "trusted partner.",
+    "sub": "From admission to arrival — we guide students and families every step of the way.",
+    "education": {
+      "title": "MBBS in Uzbekistan",
+      "chip": "EDUCATION",
+      "meta": "From $2,900 / year · WHO · NMC recognised",
+      "line": "6-year program taught in English",
+      "link": "Explore MBBS"
+    },
+    "care": {
+      "title": "Cancer treatment in India",
+      "chip": "CARE",
+      "meta": "Targeted therapy · Cytotron · Radiation therapy",
+      "line": "Send reports — get a treatment plan",
+      "link": "Request a case review"
+    },
+    "stats": {
+      "tuition": {
+        "value": "$2,900",
+        "label": "TUITION PER YEAR"
+      },
+      "years": {
+        "value": "6 years",
+        "label": "MBBS (5 + 1 CLINICAL)"
+      },
+      "accreditation": {
+        "value": "WHO · NMC",
+        "label": "ACCREDITED PROGRAMMES"
+      }
+    }
+  },
+  "trust": {
+    "badges": [
+      "WHO",
+      "NMC",
+      "FAIMER",
+      "Bukhara, Uzbekistan",
+      "Cytotron India",
+      "Est. 2026",
+      "Students from 6 countries",
+      "Licensed physicians"
+    ],
+    "badgesLabel": "Trust and accreditation badges"
+  },
+  "about": {
+    "eyebrow": "ABOUT AEM",
+    "titleLine1": "Two frontiers,",
+    "titleAccent": "one",
+    "titleLine2": "team behind them.",
+    "body": "Amigos en Mundo is a Bukhara-based consultancy. We guide students into MBBS programs in Uzbekistan and coordinate cancer treatment in India — from the first consultation to arrival.",
+    "bento": {
+      "campusTitle": "Study MBBS in Uzbekistan",
+      "campusBody": "A six-year, English-medium programme at Bukhara Innovation & Medical University.",
+      "campusAlt": "Students at Bukhara Innovation & Medical University",
+      "educationChip": "EDUCATION",
+      "learnMore": "Learn more",
+      "recognisedBy": "Recognised by",
+      "cytotronTitle": "Cytotron",
+      "cytotronBody": "An advanced care option reviewed case by case with partner physicians in India.",
+      "yearValue": "2026",
+      "yearLabel": "EST. IN BUKHARA",
+      "mapTitle": "Bukhara → India",
+      "mapBody": "Two frontiers, one team.",
+      "mapBukhara": "BUKHARA, UZ",
+      "mapIndia": "INDIA"
+    }
+  },
+  "cancer": {
+    "eyebrow": "CANCER TREATMENT",
+    "title": "Advanced cancer care by Amigos en Mundo LLC",
+    "body": "Three treatment approaches. Every plan starts with a physician review of your reports.",
+    "tabs": {
+      "targeted": "Targeted therapy",
+      "cytotron": "Cytotron",
+      "radiation": "Radiation therapy"
+    },
+    "targeted": {
+      "eyebrow": "TARGETED THERAPY",
+      "h3": "Targeted radioligand therapy",
+      "intro": "Lutetium-177, Terbium-161 and Actinium-225 are radioactive isotopes used in targeted radioligand therapy (theranostics). They bind to surface proteins such as PSMA (prostate-specific membrane antigen) and are used in cancers such as metastatic castration-resistant prostate cancer (mCRPC) and neuroendocrine tumors.",
+      "isotopes": [
+        {
+          "symbol": "Lu-177",
+          "name": "Lutetium-177",
+          "type": "Beta (β) emitter",
+          "howLabel": "HOW IT WORKS",
+          "howText": "Beta particles travel up to a few millimeters, creating a 'crossfire' effect that reaches bulky, heterogeneous tumors and nearby cells.",
+          "useLabel": "PRIMARY USE",
+          "useText": "The established clinical benchmark; an FDA-approved radioligand therapy, for example for PSMA-positive prostate cancer."
+        },
+        {
+          "symbol": "Tb-161",
+          "name": "Terbium-161",
+          "type": "Beta (β) + Auger electrons",
+          "howLabel": "HOW IT WORKS",
+          "howText": "Similar to Lu-177, plus Auger and internal conversion electrons that release high energy over an extremely short distance, giving a stronger local dose to micro-tumors and single-cell metastases.",
+          "useLabel": "PRIMARY USE",
+          "useText": "A newer, emerging option studied for small-volume disease, post-surgical residual disease, or progression after Lu-177 therapy."
+        },
+        {
+          "symbol": "Ac-225",
+          "name": "Actinium-225",
+          "type": "Alpha (α) emitter",
+          "howLabel": "HOW IT WORKS",
+          "howText": "Alpha particles travel only a few cell widths but carry massive energy, causing severe, irreparable DNA breaks in cancer cells.",
+          "useLabel": "PRIMARY USE",
+          "useText": "Targeted alpha therapy, often for treatment-resistant or advanced disease that no longer responds to Lu-177, or combined with Lu-177 ('tandem therapy')."
+        }
+      ],
+      "penetration": {
+        "title": "Penetration range",
+        "lu177": "up to a few millimeters",
+        "tb161": "extremely short range, high local dose",
+        "ac225": "a few cell widths",
+        "note": "Illustrative, not to scale"
+      }
+    }
+  },
+  "cytotron": {
+    "eyebrow": "CYTOTRON · CARE IN INDIA",
+    "titleLine1": "Technology-led care,",
+    "titleAccent": "planned",
+    "titleLine2": "for your case.",
+    "sub": "Cytotron sessions are prescribed and supervised by licensed physicians after a full report review.",
+    "captions": [
+      {
+        "number": "01",
+        "title": "Non-Invasive",
+        "body": "No incisions — treatment is delivered externally during scheduled sessions."
+      },
+      {
+        "number": "02",
+        "title": "Cellular Precision",
+        "body": "Targeting is planned from your imaging and reports by the treatment team."
+      },
+      {
+        "number": "03",
+        "title": "Gentle on Surrounding Tissue",
+        "body": "Dosing is planned to limit exposure to healthy tissue near the target area."
+      }
+    ],
+    "media": {
+      "radiologyCaption": "RADIATION THERAPY",
+      "cytotronCaption": "CYTOTRON TREATMENT DEVICE",
+      "altRadiology": "Radiotherapy suite with a diagnostic imaging scanner used for treatment planning.",
+      "altDevice": "Cytotron treatment device with the patient couch and control unit."
+    },
+    "process": {
+      "title": "PROCESS",
+      "steps": ["Send reports", "Doctor review", "Treatment plan"]
+    },
+    "info": {
+      "title": "WHAT IS THE CYTOTRON?",
+      "intro": "The Cytotron is a whole-body, non-invasive medical device that uses Rotational Field Quantum Magnetic Resonance (RFQMR) to deliver high-intensity, pulsed electromagnetic fields to specific tissues in the body.",
+      "items": [
+        {
+          "title": "Tumor destruction",
+          "body": "Designed to target solid tumors (such as breast, liver and pancreas) and abnormally regenerating tissue by inducing programmed cell death (apoptosis)."
+        },
+        {
+          "title": "Tissue regeneration",
+          "body": "Also explored in certain contexts for tissue regeneration, osteoarthritis and hypoxic-ischemic encephalopathy (HIE)."
+        },
+        {
+          "title": "Designations",
+          "body": "FDA designation covers specific solid tumors (breast, liver, pancreas). Regulatory review is ongoing in various countries."
+        }
+      ],
+      "chips": [
+        "CE mark",
+        "FDA Breakthrough Device Designation",
+        "Under clinical evaluation / regulatory review"
+      ]
+    },
+    "trust": [
+      "Case reviews by licensed physicians",
+      "Partner clinic in India · treatment plans issued only after medical file verification."
+    ],
+    "disclaimer": "Individual results may vary. Treatment is prescribed by a licensed physician. Information on this page is not medical advice."
+  },
+  "radiation": {
+    "eyebrow": "RADIATION THERAPY",
+    "h3": "Elekta Versa HD LINAC with Stereotactic Robotic 6D Couch",
+    "intro": "An advanced radiation therapy system used to treat a wide range of cancers throughout the body with extreme precision. It delivers high doses of radiation directly to tumors while protecting surrounding healthy tissue.",
+    "usedFor": "USED FOR",
+    "modes": ["SRS - stereotactic radiosurgery", "SBRT - stereotactic body radiotherapy"],
+    "areas": [
+      {
+        "name": "Brain and spine",
+        "note": "Precision treatment for primary tumors or metastases."
+      },
+      {
+        "name": "Lung and liver",
+        "note": "Tumors that move as the patient breathes."
+      },
+      {
+        "name": "Prostate",
+        "note": "Tumors that can shift with internal organ fullness."
+      },
+      {
+        "name": "Head and neck",
+        "note": "Cancers very close to critical structures such as the optic nerve or brainstem."
+      }
+    ],
+    "hardware": [
+      {
+        "title": "The LINAC (Versa HD)",
+        "intro": "Generates high-energy X-rays or electrons and shapes them exactly to the form of the tumor.",
+        "rows": [
+          {
+            "label": "High dose-rate delivery",
+            "text": "Radiation is delivered rapidly, so the patient lies still for less time."
+          },
+          {
+            "label": "Dynamic beam shaping",
+            "text": "A High-Definition Multi-Leaf Collimator (HD-MLC) uses dozens of tiny computer-controlled tungsten leaves to block healthy tissue and leave the tumor exposed."
+          },
+          {
+            "label": "Real-time imaging",
+            "text": "4D CT scans before and during treatment verify the tumor's exact location."
+          }
+        ]
+      },
+      {
+        "title": "The Robotic 6D Couch",
+        "intro": "A standard couch adjusts in 3 directions. The 6D hexapod couch adds 3 rotational axes to correct the slightest misalignment.",
+        "axes": [
+          {
+            "n": "1",
+            "label": "X · left / right"
+          },
+          {
+            "n": "2",
+            "label": "Y · up / down"
+          },
+          {
+            "n": "3",
+            "label": "Z · forward / backward"
+          },
+          {
+            "n": "4",
+            "label": "Pitch · tilt forward / back"
+          },
+          {
+            "n": "5",
+            "label": "Roll · tilt side to side"
+          },
+          {
+            "n": "6",
+            "label": "Yaw · rotate clockwise / counter-clockwise"
+          }
+        ],
+        "caption": "6 degrees of freedom"
+      }
+    ],
+    "flow": {
+      "eyebrow": "TREATMENT FLOW",
+      "steps": [
+        {
+          "title": "Imaging",
+          "text": "The LINAC's imaging systems scan the target area."
+        },
+        {
+          "title": "Calculation",
+          "text": "Software compares the live scan with the treatment plan and calculates any error."
+        },
+        {
+          "title": "Robotic correction",
+          "text": "The 6D couch rotates and shifts to align the tumor with the beam."
+        },
+        {
+          "title": "Delivery",
+          "text": "The LINAC delivers the targeted radiation dose."
+        }
+      ]
+    }
+  },
+  "affiliate": {
+    "eyebrow": "AFFILIATE MARKETING",
+    "title": "Grow your business worldwide",
+    "body1": "AEM runs market research for your product and finds where demand already exists.",
+    "body2": "We plan the channels, run the campaigns and report on traffic, leads and sales.",
+    "ctaPrimary": "Try a trial business boost",
+    "flow": {
+      "product": "Your product",
+      "research": "AEM marketing research",
+      "researchMeta": "Where · When · To whom",
+      "customers": "Customers worldwide",
+      "channels": ["Traffic", "Leads", "Sales"]
+    }
+  },
+  "admission": {
+    "eyebrow": "STUDENT ADMISSION",
+    "title": "Student admission, explained",
+    "intro": "Student admission is the formal process by which a school, college or university evaluates applicants and accepts them into its programs. Admission is an offer of a seat; enrollment happens afterwards, when the student accepts the offer, pays fees and officially registers.",
+    "stages": [
+      {
+        "title": "Research and preparation",
+        "bullets": ["Finding programs", "Checking requirements (GPA, previous degrees, exams)"]
+      },
+      {
+        "title": "Submitting the application",
+        "bullets": [
+          "Application form via a portal or the university website",
+          "Supporting documents: transcripts and diplomas, test scores (SAT, ACT, GRE, IELTS/TOEFL), personal statement, recommendation letters, CV or portfolio"
+        ]
+      },
+      {
+        "title": "Review and evaluation",
+        "bullets": [
+          "Initial screening for completeness and cutoffs",
+          "Selection: merit-based, holistic review or interview"
+        ]
+      },
+      {
+        "title": "Admission decision",
+        "bullets": ["Admitted", "Waitlisted", "Conditionally admitted", "Denied"]
+      },
+      {
+        "title": "Acceptance and enrollment",
+        "bullets": ["Accept the offer", "Financial aid and deposits", "Registration and student ID"]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "PROCESS",
+    "title": "How it works",
+    "sub": "Two clear paths — one for students, one for patients. Pick yours.",
+    "tabs": {
+      "students": "For Students",
+      "patients": "For Patients"
+    },
+    "paths": {
+      "students": {
+        "steps": [
+          {
+            "title": "Free consultation",
+            "duration": "30 min",
+            "note": "Talk through options, budget and eligibility — no charge."
+          },
+          {
+            "title": "Documents",
+            "duration": "3–5 days",
+            "note": "We prepare, translate and verify your file."
+          },
+          {
+            "title": "Admission & invitation",
+            "duration": "2–4 weeks",
+            "note": "University application and invitation letter issued."
+          },
+          {
+            "title": "Visa & travel",
+            "duration": "2–3 weeks",
+            "note": "Visa filing, tickets and pre-departure briefing."
+          },
+          {
+            "title": "Arrival & settlement",
+            "duration": "first week",
+            "note": "Airport pickup, registration and dormitory move-in."
+          }
+        ]
+      },
+      "patients": {
+        "steps": [
+          {
+            "title": "Send reports",
+            "duration": "1–2 days",
+            "note": "Share imaging, biopsy and reports — we reply within 24 hours."
+          },
+          {
+            "title": "Doctor review",
+            "duration": "2–3 days",
+            "note": "Case reviews by licensed physicians after a full report review."
+          },
+          {
+            "title": "Treatment plan",
+            "duration": "3–5 days",
+            "note": "Partner clinic in India · plans issued only after medical file verification."
+          },
+          {
+            "title": "Travel & arrival",
+            "duration": "1–2 weeks",
+            "note": "Cases from India welcome · visa and travel support."
+          },
+          {
+            "title": "Treatment & follow-up",
+            "duration": "scheduled",
+            "note": "Cytotron sessions are prescribed and supervised by licensed physicians."
+          }
+        ]
+      }
+    },
+    "included": {
+      "eyebrow": "WHAT'S INCLUDED",
+      "title": "From first call to campus",
+      "items": [
+        "Document translation & notarisation",
+        "Invitation letter & admission file",
+        "Visa paperwork and mock interview",
+        "Airport pickup and SIM card registration",
+        "Local guardian contact in Bukhara"
+      ]
+    },
+    "stat": {
+      "value": "6–8",
+      "label": "weeks average from consultation to invitation letter"
+    }
+  },
+  "mbbs": {
+    "eyebrow": "STUDY MBBS IN UZBEKISTAN",
+    "title": "Bukhara Innovation & Medical University",
+    "chip": "JULY INTAKE · ENGLISH MEDIUM",
+    "keyFactsLabel": "KEY FACTS",
+    "keyFacts": [
+      {
+        "value": "6 years",
+        "label": "Duration — 5 + 1 clinical"
+      },
+      {
+        "value": "English",
+        "label": "Medium of instruction"
+      },
+      {
+        "value": "September,\nFebruary",
+        "label": "Annual intake"
+      },
+      {
+        "value": "WHO · NMC · WDMS",
+        "label": "Recognition & listing"
+      }
+    ],
+    "fees": {
+      "title": "First-year fees",
+      "currencyLabel": "Fee currency",
+      "currency": {
+        "usd": "USD",
+        "inr": "INR"
+      },
+      "optional": "optional",
+      "items": [
+        {
+          "label": "Tuition",
+          "usd": 2900,
+          "inr": 241500
+        },
+        {
+          "label": "Dormitory",
+          "usd": 500,
+          "inr": 41600
+        },
+        {
+          "label": "Mess",
+          "usd": 1200,
+          "inr": 99900
+        },
+        {
+          "label": "Police registration",
+          "usd": 300,
+          "inr": 25000
+        },
+        {
+          "label": "One-time charges",
+          "usd": 500,
+          "inr": 41600
+        },
+        {
+          "label": "Health insurance & checkup",
+          "usd": 100,
+          "inr": 8400
+        }
+      ],
+      "totalLabel": "TOTAL · YEAR 1",
+      "totalHint": "Mess on · one-time charges included",
+      "totalUsd": 5500,
+      "totalInr": 458000,
+      "totalNoteUsd": "≈ ₹458,000 · indicative",
+      "totalNoteInr": "≈ $5,500 · indicative",
+      "applyNow": "Apply Now"
+    },
+    "university": {
+      "shortName": "BIEMU",
+      "full": "Bukhara Innovation & Medical University — Faculty of Medicine, Bukhara.",
+      "badges": ["WHO/NMC Approved", "Experienced Faculty", "Modern Labs", "English Medium"],
+      "imageAlt": "BIEMU campus building"
+    },
+    "gallery": {
+      "alt1": "BIEMU campus building",
+      "alt2": "Students on campus",
+      "alt3": "University premises"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "STORIES",
+    "title": "Students and families we've guided",
+    "swipe": "SWIPE →",
+    "items": [
+      {
+        "quote": "The admission steps were explained in Uzbek, and we always knew what was next. My son landed in Bukhara in August.",
+        "name": "Dilnoza R.",
+        "role": "Mother",
+        "location": "Bukhara, UZ"
+      },
+      {
+        "quote": "They reviewed my father's reports within two days and shared a clear plan before we booked anything.",
+        "name": "Suresh K.",
+        "role": "Son",
+        "location": "Chennai, IN"
+      },
+      {
+        "quote": "Documents, visa, dormitory — everything was handled. The fee breakdown on the site matched the invoice.",
+        "name": "Anand P.",
+        "role": "Student",
+        "location": "Mumbai, IN"
+      }
+    ],
+    "ctaCard": {
+      "title": "Your journey could be next.",
+      "body": "Share your story with our team — or start with a free consultation.",
+      "cta": "Talk to us"
+    }
+  },
+  "registration": {
+    "eyebrow": "REGISTRATION",
+    "title": "Register with Amigos en Mundo",
+    "sub": "Tell us about yourself and the service you need. We reply within 24 hours.",
+    "next": {
+      "title": "WHAT HAPPENS NEXT",
+      "steps": [
+        "We review your request",
+        "A specialist contacts you within 24 hours",
+        "Free 30-minute consultation"
+      ]
+    },
+    "disclaimer": "Your details are used only to contact you about your request.",
+    "form": {
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Your full name",
+      "country": "Country",
+      "countryPlaceholder": "Select your country",
+      "service": "Choose service",
+      "servicePlaceholder": "Choose service",
+      "email": "Email address",
+      "emailPlaceholder": "name@example.com",
+      "gender": "Gender",
+      "genderMale": "Male",
+      "genderFemale": "Female",
+      "genderOther": "Other",
+      "message": "Message",
+      "messagePlaceholder": "Write text",
+      "submit": "Register",
+      "note": "We reply within 24 hours"
+    },
+    "validation": {
+      "required": "This field is required",
+      "email": "Enter a valid email address"
+    },
+    "success": {
+      "title": "Request received",
+      "text": "Thank you — a specialist will contact you within 24 hours.",
+      "again": "Send another request"
+    },
+    "error": {
+      "title": "We couldn't send your request",
+      "text": "Check your connection and try again — or chat with us on WhatsApp.",
+      "retry": "Try again",
+      "whatsapp": "Chat on WhatsApp"
+    }
+  },
+  "contact": {
+    "eyebrow": "GET IN TOUCH",
+    "titleLine1": "Let's",
+    "titleAccent": "talk",
+    "titleLine2": "it through.",
+    "body": "Students, families and patients — tell us where you want to go and we'll map the steps, costs and timeline.",
+    "addressLabel": "Office",
+    "address": "Bukhara, Uzbekistan",
+    "hours": "Mon–Sat 09:00–19:00 UZT",
+    "whatsappLabel": "WhatsApp",
+    "whatsappValue": "Chat on WhatsApp",
+    "whatsappNote": "Fastest reply 24h",
+    "phoneUzLabel": "Phone · Uzbekistan",
+    "phoneUz": "+998 93 656 68 89",
+    "phoneIndiaLabel": "Phone · India",
+    "phoneIndia": "+91 91139 61963",
+    "phoneIndiaNote": "Cases from India welcome",
+    "emailLabel": "Email",
+    "email": "amigosenmundo.med@gmail.com",
+    "telegramLabel": "Telegram",
+    "telegram": "@amigosenmundo"
+  },
+  "footer": {
+    "ctaTitle": "Ready to start?",
+    "ctaSub": "Free consultation — students, families and patients.",
+    "wordmark": "Amigos en Mundo",
+    "tagline": "Guiding students and patients across borders.",
+    "quickLinksTitle": "QUICK LINKS",
+    "contactTitle": "CONTACT",
+    "socialTitle": "SOCIAL",
+    "languageTitle": "LANGUAGE",
+    "social": {
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "youtube": "YouTube",
+      "whatsapp": "WhatsApp"
+    },
+    "copyright": "© 2026 Amigos en Mundo LLC",
+    "brandLine": "Amigos En Mundo Consulting — AEM",
+    "medicalDisclaimer": "Medical disclaimer: information on this site is for general guidance only and is not medical advice. Treatment suitability and results vary by individual; decisions are made with a licensed physician."
+  }
+}

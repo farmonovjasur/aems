@@ -1,0 +1,661 @@
+{
+  "meta": {
+    "title": "Amigos en Mundo — O'zbekistonda MBBS va Hindistonda saraton davolash",
+    "description": "Amigos en Mundo — Buxoroda joylashgan konsalting kompaniyasi. O'zbekistonda MBBS ta'limiga qabul va Hindistonda saraton davolashni muvofiqlashtirish — ikki yo'nalishda bitta jamoa."
+  },
+  "common": {
+    "freeConsultation": "Bepul konsultatsiya",
+    "talkWhatsapp": "WhatsApp'da yozing",
+    "chatWhatsapp": "WhatsApp'da suhbat",
+    "requestCaseReview": "Holatni ko'rib chiqishni so'rash",
+    "askWhatsapp": "WhatsApp'da so'rash",
+    "exploreMbbs": "MBBS dasturini ko'rish",
+    "applyNow": "Ariza berish",
+    "register": "Ro'yxatdan o'tish",
+    "talkToUs": "Biz bilan bog'laning",
+    "skipToContent": "Kontentga o'tish"
+  },
+  "nav": {
+    "about": "Biz haqimizda",
+    "cancer": "Saraton davolash",
+    "cancerTargeted": "Maqsadli terapiya",
+    "cancerTargetedSub": "Lutetium-177 · Terbiy-161 · Aktiniy-225",
+    "cancerCytotron": "Cytotron",
+    "cancerCytotronSub": "Invaziv bo'lmagan RFQMR qurilmasi",
+    "cancerRadiation": "Nurlanish terapiyasi",
+    "cancerRadiationSub": "Elekta Versa HD LINAC",
+    "caseReviewNote": "Tekshiruvlar litsenziyali shifokorlar tomonidan o'tkaziladi",
+    "menu": "Menyu",
+    "close": "Menyuni yopish",
+    "affiliate": "Affiliate marketing",
+    "admission": "Talaba qabuli",
+    "registration": "Ro'yxatdan o'tish",
+    "contacts": "Kontaktlar",
+    "cta": "Bepul konsultatsiya"
+  },
+  "hero": {
+    "eyebrow": "AMIGOS EN MUNDO — 2026-YILDAN · BUXORO",
+    "titleLine1": "Ikki yo'nalish.",
+    "titleAccent": "Bitta",
+    "titleLine2": "ishonchli hamkor.",
+    "sub": "Qabuldan yetib borishgacha — talabalar va oilalarga har bir qadamda hamroh bo'lamiz.",
+    "education": {
+      "title": "O'zbekistonda MBBS",
+      "chip": "TA'LIM",
+      "meta": "Yiliga $2,900 dan · WHO · NMC tan olgan",
+      "line": "6 yillik, ingliz tilida o'qitiladigan dastur",
+      "link": "MBBS dasturini ko'rish"
+    },
+    "care": {
+      "title": "Hindistonda saraton davolash",
+      "chip": "DAVOLASH",
+      "meta": "Maqsadli terapiya · Cytotron · Nurlanish terapiyasi",
+      "line": "Tekshiruvlarni yuboring — davolash rejasini oling",
+      "link": "Holatni ko'rib chiqishni so'rash"
+    },
+    "stats": {
+      "tuition": {
+        "value": "$2,900",
+        "label": "YILLIK TO'LOV"
+      },
+      "years": {
+        "value": "6 yil",
+        "label": "MBBS (5 + 1 KLINIK)"
+      },
+      "accreditation": {
+        "value": "WHO · NMC",
+        "label": "AKKREDITATSIYALANGAN DASTURLAR"
+      }
+    }
+  },
+  "trust": {
+    "badges": [
+      "WHO",
+      "NMC",
+      "FAIMER",
+      "Buxoro, O'zbekiston",
+      "Cytotron Hindiston",
+      "2026-yildan",
+      "6 davlatdan talabalar",
+      "Litsenziyalangan shifokorlar"
+    ],
+    "badgesLabel": "Ishonch va akkreditatsiya belgilari"
+  },
+  "about": {
+    "eyebrow": "AEM HAQIDA",
+    "titleLine1": "Ikki yo'nalish,",
+    "titleAccent": "bitta",
+    "titleLine2": "jamoa.",
+    "body": "Amigos en Mundo — Buxoroda joylashgan konsalting kompaniyasi. O'zbekistondagi MBBS dasturlariga talabalarni yo'naltiramiz va Hindistonda saraton davolashni muvofiqlashtiramiz — birinchi suhbatdan yetib borishgacha.",
+    "bento": {
+      "campusTitle": "O'zbekistonda MBBS",
+      "campusBody": "Buxoro Innovatsion va Tibbiyot Universitetida 6 yillik, ingliz tilida o'qitiladigan dastur.",
+      "campusAlt": "Buxoro Innovatsion va Tibbiyot Universiteti talabalari",
+      "educationChip": "TA'LIM",
+      "learnMore": "Batafsil",
+      "recognisedBy": "Tan olingan manbalar",
+      "cytotronTitle": "Cytotron",
+      "cytotronBody": "Hindistondagi hamkor shifokorlar bilan har bir holat alohida ko'rib chiqiladigan ilg'or davolash usuli.",
+      "yearValue": "2026",
+      "yearLabel": "BUXORODA TASHKIL ETILGAN",
+      "mapTitle": "Buxoro → Hindiston",
+      "mapBody": "Ikki yo'nalish, bitta jamoa.",
+      "mapBukhara": "BUXORO, OZ",
+      "mapIndia": "HINDISTON"
+    }
+  },
+  "cancer": {
+    "eyebrow": "SARATON DAVOLASH",
+    "title": "Amigos en Mundo LLC bilan ilg'or saraton davolash",
+    "body": "Uchta davolash yondashuvi. Har bir reja sizning hisobotlaringizni shifokor ko'rib chiqishidan boshlanadi.",
+    "tabs": {
+      "targeted": "Maqsadli terapiya",
+      "cytotron": "Cytotron",
+      "radiation": "Nurlanish terapiyasi"
+    },
+    "targeted": {
+      "eyebrow": "MAQSADLI TERAPIYA",
+      "h3": "Maqsadli radioligand terapiyasi",
+      "intro": "Lutetium-177, Terbium-161 va Actinium-225 — maqsadli radioligand terapiyasida (teranostika) ishlatiladigan radioizotoplardir. Ular PSMA (prostataga xos membrana antigeni) kabi yuzaki oqsillarga bog'lanadi va metastatik kastratsiyaga chidamli prostata saratoni (mCRPC), neyroendokrin tumorlar kabi kasalliklarda qo'llaniladi.",
+      "isotopes": [
+        {
+          "symbol": "Lu-177",
+          "name": "Lutetium-177",
+          "type": "Beta (β) nurlatgich",
+          "howLabel": "QANDAY ISHLAYDI",
+          "howText": "Beta zarralar bir necha millimetrgacha uzatilib, «krossfayr» effektini yaratadi — bu katta, heterojogen tumorlar va yaqin atrofdagi hujayralarga yetib boradi.",
+          "useLabel": "ASOSIY QO'LLANISH",
+          "useText": "O'rnatilgan klinik benchmark; FDA tomonidan tasdiqlangan radioligand terapiyasi, masalan PSMA-pozitiv prostata saratonida."
+        },
+        {
+          "symbol": "Tb-161",
+          "name": "Terbium-161",
+          "type": "Beta (β) + Auger elektronlari",
+          "howLabel": "QANDAY ISHLAYDI",
+          "howText": "Lu-177 ga o'xshash, ammo qo'shimcha Auger va ichki konversiya elektronlari juda qisqa masofada yuqori energiya ajratadi — bu mikro-tumorlar va bir hujayrali metastazlarga kuchliroq lokal doza beradi.",
+          "useLabel": "ASOSIY QO'LLANISH",
+          "useText": "Yangi, rivojlanayotgan variant: kichik hajmli kasallik, operatsiyadan qolgan residua yoki Lu-177 dan keying progressiya holatlarida o'rganilmoqda."
+        },
+        {
+          "symbol": "Ac-225",
+          "name": "Actinium-225",
+          "type": "Alfa (α) nurlatgich",
+          "howLabel": "QANDAY ISHLAYDI",
+          "howText": "Alfa zarralar faqat bir necha hujayra kengligi masofani bosib o'tadi, lekin katta energiya olibadi — bu saraton hujayralarida qaytarib bo'lmaydigan DNK buzilishlariga olib keladi.",
+          "useLabel": "ASOSIY QO'LLANISH",
+          "useText": "Maqsadli alfa terapiya — ko'pincha Lu-177 ga javob bermay qolgan chidamli yoki ilg'or holatlar uchun, yoki Lu-177 bilan birga («tandem terapiya»)."
+        }
+      ],
+      "penetration": {
+        "title": "Ta'sir masofasi",
+        "lu177": "bir necha millimetrgacha",
+        "tb161": "juda qisqa masofa, kuchli lokal doza",
+        "ac225": "bir necha hujayra kengligi",
+        "note": "Tasviriy, masshtabsiz"
+      }
+    }
+  },
+  "cytotron": {
+    "eyebrow": "CYTOTRON · HINDISTONDA",
+    "titleLine1": "Texnologiyaga asoslangan davolash,",
+    "titleAccent": "sizning holatingiz",
+    "titleLine2": "uchun rejalashtirilgan.",
+    "sub": "Cytotron seanslari to'liq tekshiruv ko'rib chiqilgandan so'ng litsenziyalangan shifokorlar tomonidan tayinlanadi va nazorat qilinadi.",
+    "captions": [
+      {
+        "number": "01",
+        "title": "Invaziv bo'lmagan",
+        "body": "Kesim yo'q — davolash rejalashtirilgan seanslar davomida tashqaridan amalga oshiriladi."
+      },
+      {
+        "number": "02",
+        "title": "Hujayra darajasida aniqlik",
+        "body": "Nishonlash shifokorlar guruhi tomonidan sizning tasvirlar va hisobotlaringiz asosida rejalashtiriladi."
+      },
+      {
+        "number": "03",
+        "title": "Atrofdagi to'qimalarga yumshoq",
+        "body": "Dozalash nishon hududi yaqinidagi sog'lom to'qimaga ta'sirni cheklash uchun rejalashtiriladi."
+      }
+    ],
+    "media": {
+      "radiologyCaption": "NURLANISH TERAPIYASI",
+      "cytotronCaption": "CYTOTRON DAVOLASH QURILMASI",
+      "altRadiology": "Davolash rejasini tuzish uchun diagnostik tasvirlash apparati bilan radioterapiya zali.",
+      "altDevice": "Bemor koyiagi va boshqaruv bloki bilan Cytotron davolash qurilmasi."
+    },
+    "process": {
+      "title": "JARAYON",
+      "steps": ["Tekshiruvlarni yuboring", "Shifokor ko'rib chiqadi", "Davolash rejasi"]
+    },
+    "info": {
+      "title": "CYTOTRON NIMA?",
+      "intro": "Cytotron — butun tanani qamrab oladigan, invaziv bo'lmagan tibbiy qurilma bo'lib, u Rotatsion maydon kvant magnit rezonansi (RFQMR) orqali tana ichidagi aniq to'qimalarga yuqori intensivdagi pulsatsiyali elektromagnit maydonlarni yuboradi.",
+      "items": [
+        {
+          "title": "O'simtani yo'q qilish",
+          "body": "Qattiq o'simtalar (masalan, ko'krak, jigar va oshqozon) va anomal tiklanayotgan to'qimalarga dasturlashgan hujayra o'limini (apoptoz) keltirish orqali nishonlashga mo'ljallangan."
+        },
+        {
+          "title": "To'qima tiklanishi",
+          "body": "Ba'zi holatlarda to'qima tiklanishi, osteoartrit va gipoksik-ishemik ensefalopatiya (HIE) uchun ham o'rganilmoqda."
+        },
+        {
+          "title": "Belgilanishlar",
+          "body": "FDA belgilashi aniq qattiq o'simtalarni (ko'krak, jigar, oshqozon) qamrab oladi. Turli mamlakatlarda normativ ko'rib chiqish davom etmoqda."
+        }
+      ],
+      "chips": [
+        "CE belgisi",
+        "FDA Breakthrough Device Designation",
+        "Klinik baholash / normativ ko'rib chiqish bosqichida"
+      ]
+    },
+    "trust": [
+      "Litsenziyalangan shifokorlar tomonidan ko'rib chiqilgan holatlar",
+      "Hindistondagi hamkor klinika · davolash rejalari faqat tibbiy fayl tekshirilgandan keyin beriladi."
+    ],
+    "disclaimer": "Natijalar har bir bemorda farq qilishi mumkin. Davolashni litsenziyalangan shifokor tayinlaydi. Ushbu sahifadagi ma'lumotlar tibbiy maslahat emas."
+  },
+  "radiation": {
+    "eyebrow": "NURLANISH TERAPIYASI",
+    "h3": "Elekta Versa HD LINAC va Stereotaktik Robotik 6D stol",
+    "intro": "Butun tana bo'ylab keng turdagi raklarni juda aniq davolash uchun ishlatiladigan ilg'or nurlanish terapiyasi tizimi. U atrof-muhitdagi sog'lom to'qimani himoya qilib, nurni bevosita o'smalarga yuqori dozalarda yetkazib beradi.",
+    "usedFor": "QO'LLANILADI",
+    "modes": ["SRS - stereotaktik radiojarrohlik", "SBRT - stereotaktik tana radiojarrohligi"],
+    "areas": [
+      {
+        "name": "Bosh va umurtqa",
+        "note": "Birlamchi o'smalar yoki metastazlar uchun aniq davolash."
+      },
+      {
+        "name": "O'pka va jigar",
+        "note": "Bemor nafas olganda siljib turadigan o'smalar."
+      },
+      {
+        "name": "Prostata",
+        "note": "Ichki organlar to'lishi bilan siljishi mumkin bo'lgan o'smalar."
+      },
+      {
+        "name": "Bosh va bo'yin",
+        "note": "Ko'z nervi yoki miya o'stasi kabi muhim tuzilmalar juda yaqinidagi raklar."
+      }
+    ],
+    "hardware": [
+      {
+        "title": "LINAC (Versa HD)",
+        "intro": "Yuqori energiyali rentgen yoki elektron nurlarini hosil qilib, ularni o'sma shakliga aniq moslashtiradi.",
+        "rows": [
+          {
+            "label": "Yuqori dozali yetkazib berish",
+            "text": "Nur tez yetkazib beriladi, shuning uchun bemor kamroq vaqt harakatda qoladi."
+          },
+          {
+            "label": "Dinamik nur shakllantirish",
+            "text": "Yuqori aniqlikdagi ko'p barghli kollimator (HD-MLC) kompyuter bilan boshqariladigan o'nlab kichik volfram bargini sog'lom to'qimani to'sib, o'smani ochiq qoldiradi."
+          },
+          {
+            "label": "Real vaqtda tasvirlash",
+            "text": "Davolashdan oldin va davolash paytida o'tkazilgan 4D KT o'smaning aniq joyini tasdiqlaydi."
+          }
+        ]
+      },
+      {
+        "title": "Robotik 6D stol",
+        "intro": "Standart stol 3 yo'nalishda sozlanadi. 6D gexapod stol esa kichik eng kichik chetlashishni tuzatish uchun 3 ta aylanma o'q qo'shadi.",
+        "axes": [
+          {
+            "n": "1",
+            "label": "X · chap / o'ng"
+          },
+          {
+            "n": "2",
+            "label": "Y · yuqori / past"
+          },
+          {
+            "n": "3",
+            "label": "Z · oldinga / orqaga"
+          },
+          {
+            "n": "4",
+            "label": "Pitch · oldinga / orqaga og'ish"
+          },
+          {
+            "n": "5",
+            "label": "Roll · yon tomonga og'ish"
+          },
+          {
+            "n": "6",
+            "label": "Yaw · soat yo'nalishi bo'yicha aylanish"
+          }
+        ],
+        "caption": "6 erkinlik darajasi"
+      }
+    ],
+    "flow": {
+      "eyebrow": "DAVOLASH BOSQICHLARI",
+      "steps": [
+        {
+          "title": "Tasvirlash",
+          "text": "LINACning tasvirlash tizimlari maqsad sohani skanerlaydi."
+        },
+        {
+          "title": "Hisoblash",
+          "text": "Dastur jonli skan bilan davolash rejani solishtiradi va xatoni hisoblaydi."
+        },
+        {
+          "title": "Robotik korreksiya",
+          "text": "6D stol o'sma nuri bilan moslashtirish uchun aylanadi va siljiydi."
+        },
+        {
+          "title": "Yetkazib berish",
+          "text": "LINAC maqsadli nurlanish dozasini yetkazib beradi."
+        }
+      ]
+    }
+  },
+  "affiliate": {
+    "eyebrow": "AFFILIATE MARKETING",
+    "title": "Biznesingizni butun dunyoda rivojlantiring",
+    "body1": "AEM mahsulotingiz uchun bozor tadqiqotini o'tkazadi va talab qayerda borligini aniqlaydi.",
+    "body2": "Kanallarni rejalashtiramiz, kampaniyalarni boshqaramiz va trafik, lidlar va savdolar bo'yicha hisobot beramiz.",
+    "ctaPrimary": "Biznesingizga boost sinabini ko'ring",
+    "flow": {
+      "product": "Sizning mahsulotingiz",
+      "research": "AEM marketing tadqiqoti",
+      "researchMeta": "Qayerda · Qachon · Kimga",
+      "customers": "Butun dunyodagi mijozlar",
+      "channels": ["Trafik", "Lidlar", "Savdolar"]
+    }
+  },
+  "admission": {
+    "eyebrow": "TALABA QABULI",
+    "title": "Talaba qabuli — bosqichma-bosqich",
+    "intro": "Talaba qabuli — maktab, kollej yoki universitet tomonidan arizalarni baholash va o'z dasturlariga qabul qilish jarayoni. Qabul — joy ajratish taklifi; ro'yxatga olish esa keyinroq, talaba taklifni qabul qilib, to'lovlarni to'lagan va rasman qayd etilganda amalga oshadi.",
+    "stages": [
+      {
+        "title": "Tadqiqot va tayyorgarlik",
+        "bullets": [
+          "Dasturlarni izohlash",
+          "Talablarni tekshirish (GPA, oldingi darajalar, imtihonlar)"
+        ]
+      },
+      {
+        "title": "Arizani topshirish",
+        "bullets": [
+          "Ariza portal yoki universitet sayti orqali",
+          "Qo'shimcha hujjatlar: attestat va diplomlar, test natijalari (SAT, ACT, GRE, IELTS/TOEFL), shaxsiy bayonot, tavsiya xatlari, CV yoki portfolio"
+        ]
+      },
+      {
+        "title": "Ko'rib chiqish va baholash",
+        "bullets": [
+          "To'liqlik va o'tish ballari bo'yicha dastlabki tekshiruv",
+          "Tanlov: ball bo'yicha, yaxlit baholash yoki suhbat"
+        ]
+      },
+      {
+        "title": "Qabul qarori",
+        "bullets": ["Qabul qilindi", "Navbat ro'yxatida", "Shartli qabul qilindi", "Rad etildi"]
+      },
+      {
+        "title": "Qabulni tasdiqlash va ro'yxatga olish",
+        "bullets": [
+          "Taklifni qabul qiling",
+          "Moliyaviy yordam va depozitlar",
+          "Qayd etish va talaba guvohnomasi"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "JARAYON",
+    "title": "Bu qanday ishlaydi",
+    "sub": "Ikki aniq yo'l — biri talabalar, biri bemorlar uchun. O'zingiznikini tanlang.",
+    "tabs": {
+      "students": "Talabalar uchun",
+      "patients": "Bemorlar uchun"
+    },
+    "included": {
+      "eyebrow": "NIMALAR KIRADI",
+      "title": "Birinchi qo'ng'iroqdan kampusgacha",
+      "items": [
+        "Hujjatlarni tarjima qilish va notarial tasdiqlash",
+        "Taklifnoma xati va qabul fayli",
+        "Viza hujjatlari va mashq suhbati",
+        "Aeroportdan kutib olish va SIM karta ro'yxatdan o'tkazish",
+        "Buxoroda mahalliy vasiy aloqasi"
+      ]
+    },
+    "stat": {
+      "value": "6–8",
+      "label": "hafta — konsultatsiyadan taklifnomagacha o‘rtacha"
+    },
+    "paths": {
+      "students": {
+        "steps": [
+          {
+            "title": "Bepul konsultatsiya",
+            "duration": "30 daqiqa",
+            "note": "Variantlar, byudjet va moslikni muhokama qilamiz — bepul."
+          },
+          {
+            "title": "Hujjatlar",
+            "duration": "3–5 kun",
+            "note": "Faylni tayyorlaymiz, tarjima qilamiz va tekshiramiz."
+          },
+          {
+            "title": "Qabul va taklifnoma",
+            "duration": "2–4 hafta",
+            "note": "Universitetga ariza va taklifnoma xati rasmiylashtiriladi."
+          },
+          {
+            "title": "Viza va sayohat",
+            "duration": "2–3 hafta",
+            "note": "Viza hujjatlari, chiptalar va jo‘nishdan oldingi mashq."
+          },
+          {
+            "title": "Yetib borish va joylashish",
+            "duration": "birinchi hafta",
+            "note": "Aeroportdan kutib olish, ro‘yxatdan o‘tkazish va yotoqxonaga ko‘chish."
+          }
+        ]
+      },
+      "patients": {
+        "steps": [
+          {
+            "title": "Hisobotlarni yuboring",
+            "duration": "1–2 kun",
+            "note": "Tashxis, biopsiya va hisobotlarni yuboring — 24 soat ichida javob beramiz."
+          },
+          {
+            "title": "Shifokor ko‘rigi",
+            "duration": "2–3 kun",
+            "note": "To‘liq hisobot ko‘rilgandan keyin litsenziyali shifokorlar holatni baholaydi."
+          },
+          {
+            "title": "Davolash rejasi",
+            "duration": "3–5 kun",
+            "note": "Hindistandagi sherik klinika · reja faqat medfayl tekshirilgach beriladi."
+          },
+          {
+            "title": "Sayohat va yetib borish",
+            "duration": "1–2 hafta",
+            "note": "Hindistondan kelgan holatlar · viza va sayohat yordami."
+          },
+          {
+            "title": "Davolash va kuzatuv",
+            "duration": "rejalashtirilgan",
+            "note": "Cytotron seanslari litsenziyali shifokor tomonidan belgilanadi va nazorat qilinadi."
+          }
+        ]
+      }
+    }
+  },
+  "mbbs": {
+    "eyebrow": "O'ZBEKISTONDA MBBS",
+    "title": "Buxoro Innovatsion va Tibbiyot Universiteti",
+    "chip": "IYUL QABULI · INGLIZ TILIDA",
+    "keyFactsLabel": "ASOSIY MA'LUMOTLAR",
+    "keyFacts": [
+      {
+        "value": "6 yil",
+        "label": "Muddat — 5 + 1 klinik"
+      },
+      {
+        "value": "Ingliz tili",
+        "label": "O'qitish tili"
+      },
+      {
+        "value": "Sentabr,\nFevral",
+        "label": "Yillik qabul oylari"
+      },
+      {
+        "value": "WHO · NMC · WDMS",
+        "label": "Tan olinish va ro'yxat"
+      }
+    ],
+    "fees": {
+      "title": "Birinchi yil to'lovlari",
+      "currencyLabel": "To'lov valyutasi",
+      "currency": {
+        "usd": "USD",
+        "inr": "INR"
+      },
+      "optional": "ixtiyoriy",
+      "items": [
+        {
+          "label": "Kontrakt",
+          "usd": 2900,
+          "inr": 241500
+        },
+        {
+          "label": "Yotoqxona",
+          "usd": 500,
+          "inr": 41600
+        },
+        {
+          "label": "Ovqatlanish",
+          "usd": 1200,
+          "inr": 99900
+        },
+        {
+          "label": "Politsiya ro'yxati",
+          "usd": 300,
+          "inr": 25000
+        },
+        {
+          "label": "Bir martalik to'lovlar",
+          "usd": 500,
+          "inr": 41600
+        },
+        {
+          "label": "Tibbiy sug'urta va ko'rik",
+          "usd": 100,
+          "inr": 8400
+        }
+      ],
+      "totalLabel": "JAMI · 1-KURS",
+      "totalHint": "Ovqatlanish qo'shilgan · bir martalik to'lovlar hisobga olingan",
+      "totalUsd": 5500,
+      "totalInr": 458000,
+      "totalNoteUsd": "≈ ₹458,000 · indikativ",
+      "totalNoteInr": "≈ $5,500 · indikativ",
+      "applyNow": "Ariza berish"
+    },
+    "university": {
+      "shortName": "BIEMU",
+      "full": "Buxoro Innovatsion va Tibbiyot Universiteti — Tibbiyot fakulteti, Buxoro.",
+      "badges": [
+        "WHO/NMC tasdiqlangan",
+        "Tajribali professorlar",
+        "Zamonaviy laboratoriyalar",
+        "Ingliz tilida"
+      ],
+      "imageAlt": "BIEMU kampus binosi"
+    },
+    "gallery": {
+      "alt1": "BIEMU kampus binosi",
+      "alt2": "Talabalar kampusda",
+      "alt3": "Universitet hududi"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "HIKOYALAR",
+    "title": "Yo'l ko'rsatgan talabalar va oilalar",
+    "swipe": "SURING →",
+    "items": [
+      {
+        "quote": "Qabul bosqichlari o'zbek tilida tushuntirildi va keyingi qadam har doim aniq edi. O'g'lim avgustda Buxoroga yetib keldi.",
+        "name": "Dilnoza R.",
+        "role": "Ona",
+        "location": "Buxoro, UZ"
+      },
+      {
+        "quote": "Otamning tekshiruvlarini ikki kun ichida ko'rib chiqishdi va hech narsa band qilishdan oldin aniq reja berishdi.",
+        "name": "Suresh K.",
+        "role": "O'g'il",
+        "location": "Chennay, IN"
+      },
+      {
+        "quote": "Hujjatlar, viza, yotoqxona — hammasi hal qilindi. Saytdagi to'lov taqsimoti hisob-faktura bilan mos keldi.",
+        "name": "Anand P.",
+        "role": "Talaba",
+        "location": "Mumbay, IN"
+      }
+    ],
+    "ctaCard": {
+      "title": "Sizning yo'lingiz keyingisi bo'lishi mumkin.",
+      "body": "Jamoamizga o'z hikoyangizni yorib bering — yoki bepul konsultatsiyadan boshlang.",
+      "cta": "Biz bilan bog'laning"
+    }
+  },
+  "registration": {
+    "eyebrow": "RO'YXATDAN O'TISH",
+    "title": "Amigos en Mundo'da ro'yxatdan o'ting",
+    "sub": "O'zingiz va kerakli xizmat haqida yozib qoldiring. 24 soat ichida javob beramiz.",
+    "next": {
+      "title": "KEYIN NIMA BO'LADI",
+      "steps": [
+        "Arizangizni ko'rib chiqamiz",
+        "Mutaxassis 24 soat ichida siz bilan bog'lanadi",
+        "Bepul 30 daqiqalik konsultatsiya"
+      ]
+    },
+    "disclaimer": "Ma'lumotlaringiz faqat so'rovingiz bo'yicha bog'lanish uchun ishlatiladi.",
+    "form": {
+      "fullName": "To'liq ism",
+      "fullNamePlaceholder": "To'liq ismingiz",
+      "country": "Davlat",
+      "countryPlaceholder": "Davlatni tanlang",
+      "service": "Xizmatni tanlang",
+      "servicePlaceholder": "Xizmatni tanlang",
+      "email": "Email manzil",
+      "emailPlaceholder": "name@example.com",
+      "gender": "Jins",
+      "genderMale": "Erkak",
+      "genderFemale": "Ayol",
+      "genderOther": "Boshqa",
+      "message": "Xabar",
+      "messagePlaceholder": "Matn yozing",
+      "submit": "Ro'yxatdan o'tish",
+      "note": "24 soat ichida javob beramiz"
+    },
+    "validation": {
+      "required": "Bu maydon to'ldirilishi shart",
+      "email": "To'g'ri email manzil kiriting"
+    },
+    "success": {
+      "title": "So'rov qabul qilindi",
+      "text": "Rahmat — mutaxassis 24 soat ichida siz bilan bog'lanadi.",
+      "again": "Yana so'rov yuborish"
+    },
+    "error": {
+      "title": "So'rovingizni yubora olmadik",
+      "text": "Internetni tekshirib, qayta urinib ko'ring — yoki WhatsApp orqali yozing.",
+      "retry": "Qayta urinish",
+      "whatsapp": "WhatsApp'da yozish"
+    }
+  },
+  "contact": {
+    "eyebrow": "BOG'LANISH",
+    "titleLine1": "Keling,",
+    "titleAccent": "birga",
+    "titleLine2": "muhokama qilamiz.",
+    "body": "Talabalar, oilalar va bemorlar — qayerga intilayotganingizni ayting, biz qadamlar, xarajat va muddatni ko'rsatamiz.",
+    "addressLabel": "Ofis",
+    "address": "Buxoro, O'zbekiston",
+    "hours": "Du–Sha 09:00–19:00 UZT",
+    "whatsappLabel": "WhatsApp",
+    "whatsappValue": "WhatsApp'da yozing",
+    "whatsappNote": "Eng tez javob 24 soatda",
+    "phoneUzLabel": "Telefon · O'zbekiston",
+    "phoneUz": "+998 93 656 68 89",
+    "phoneIndiaLabel": "Telefon · Hindiston",
+    "phoneIndia": "+91 91139 61963",
+    "phoneIndiaNote": "Hindistondan murojaatlar qabul qilinadi",
+    "emailLabel": "Email",
+    "email": "amigosenmundo.med@gmail.com",
+    "telegramLabel": "Telegram",
+    "telegram": "@amigosenmundo"
+  },
+  "footer": {
+    "ctaTitle": "Boshlashga tayyormisiz?",
+    "ctaSub": "Bepul konsultatsiya — talabalar, oilalar va bemorlar uchun.",
+    "wordmark": "Amigos en Mundo",
+    "tagline": "Talabalar va bemorlarni chegaralar ortida yo'l ko'rsatib boramiz.",
+    "quickLinksTitle": "TEZKOR HAVOLALAR",
+    "contactTitle": "KONTAKTLAR",
+    "socialTitle": "IJTIMOIY TARMOQLAR",
+    "languageTitle": "TIL",
+    "social": {
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "youtube": "YouTube",
+      "whatsapp": "WhatsApp"
+    },
+    "copyright": "© 2026 Amigos en Mundo LLC",
+    "brandLine": "Amigos En Mundo Consulting — AEM",
+    "medicalDisclaimer": "Tibbiy ogohlantirish: ushbu saytdagi ma'lumotlar faqat umumiy ma'lumot uchun bo'lib, tibbiy maslahat hisoblanmaydi. Davolashning mosligi va natijalari har bir insonda farq qiladi; qarorlar litsenziyalangan shifokor bilan qabul qilinadi."
+  }
+}

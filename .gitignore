@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Local design, docs & tools
+.agents/
+3d_models/
+docs/
+design.pen*
+PLAN.md
+skills-lock.json
+
+
+# Build
+dist/
+dist-ssr/
+.vite/
+
+# Env — secrets repo'ga tushmaydi (§9.4)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Test / coverage
+coverage/
+playwright-report/
+test-results/
+
+# Deploy
+.netlify/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
