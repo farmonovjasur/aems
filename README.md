@@ -1,6 +1,6 @@
 # AEM 2026 — Landing
 
-Amigos en Mundo (Bukhara) landing page. To'liq dizayn va implementatsiya rejasi: [`PLAN.md`](./PLAN.md).
+Amigos en Mundo (Bukhara) landing page.
 
 ## Stack
 
