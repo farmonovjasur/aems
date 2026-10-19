@@ -26,7 +26,7 @@ Amigos en Mundo (Bukhara) landing page.
 | `npm run check:i18n` | 4 til kalit parity tekshiruvi                     |
 | `npm run budget`     | Asset/bundle byudjet tekshiruvi (build'dan keyin) |
 
-## Muhim qoidalar (PLAN.md)
+## Muhim qoidalar
 
 - Har faza oxirida: `npm run lint && npm run build && npm run budget`.
 - Kodda literal hex yo'q — faqat `@theme` tokenlari.

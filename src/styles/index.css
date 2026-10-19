@@ -104,6 +104,12 @@
   --shadow-bento: 0 20px 60px 0 color-mix(in srgb, var(--color-ink-900) 12%, transparent);
 }
 
+/* Remove Netlify "Netlify Drawer" icon */
+netlify-drawer {
+  display: none !important;
+}
+/* Remove Netlify "Netlify Drawer" icon */
+
 @layer base {
   html {
     -webkit-text-size-adjust: 100%;
