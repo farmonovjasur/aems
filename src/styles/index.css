@@ -105,8 +105,13 @@
 }
 
 /* Remove Netlify "Netlify Drawer" icon */
-netlify-drawer {
+netlify-drawer,
+[data-netlify-deploy-id],
+iframe[title*="Netlify"] {
   display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 /* Remove Netlify "Netlify Drawer" icon */
 
