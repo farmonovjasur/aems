@@ -4,7 +4,6 @@ import { CONTACT } from '../../lib/contacts'
 import { cn } from '../../lib/cn'
 import { AuroraBackground } from '../ui/AuroraBackground'
 import { ButtonLink } from '../ui/Button'
-import { StatCard } from '../ui/Card'
 import { Chip } from '../ui/Chip'
 import { Container } from '../ui/Container'
 import { Section } from '../ui/Section'
@@ -20,7 +19,7 @@ import {
 /*
  * F6.1 — 01 · Hero (split) — design.pen §3.01:
  * Desktop (nN4iS): aurora (3 layer) + eyebrow + H1 (serif gradient aksent) + 2 CTA
- *   + 2 split-panel (EDUCATION / CARE) + 3 stat karta.
+ *   + 2 split-panel (EDUCATION / CARE).
  * Mobile (R3h312): stacked, aurora 2 layer, CTA full-width, panel'lar ustma-ust.
  * O'lchovlar/typografiya/opacity — design.pen'dan 1:1 (motion qatlami F7'da).
  */
@@ -186,24 +185,6 @@ export function Hero() {
             <SplitPanel key={panel.tone} {...panel} />
           ))}
         </div>
-      </Container>
-
-      <Container className="relative hidden grid-cols-3 gap-5 md:grid">
-        <StatCard
-          tone="brand"
-          value={t('hero.stats.tuition.value')}
-          label={t('hero.stats.tuition.label')}
-        />
-        <StatCard
-          tone="mint"
-          value={t('hero.stats.years.value')}
-          label={t('hero.stats.years.label')}
-        />
-        <StatCard
-          tone="violet"
-          value={t('hero.stats.accreditation.value')}
-          label={t('hero.stats.accreditation.label')}
-        />
       </Container>
     </Section>
   )
