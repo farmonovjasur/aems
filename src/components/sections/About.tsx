@@ -3,15 +3,15 @@ import { onAnchorClick } from '../../lib/anchors'
 import { cn } from '../../lib/cn'
 import { MapArc } from '../motion/MapArc'
 import { Container } from '../ui/Container'
-import { IconArrow, IconBadgeCheck, IconScanLine } from '../ui/icons'
+import { IconArrow, IconBadgeCheck, IconStethoscope } from '../ui/icons'
 
 /*
  * F6.3 — 03 · About — Bento (design.pen §3.03).
  * Desktop (BIUr4, paper-50): Section Head (eyebrow + H2 + intro 440px) va bento grid
- *   2×628px ustun — chapda Study MBBS (img 216 + content, 420px), o'ngda 2 qator
- *   (198px): Cytotron 300px + "2026" stat, Map arc 405px + Recognised by 199px.
- * Mobile (GBFCI, 390): head vertikal, kartalar bitta ustun (gap 14) — Cytotron, Map,
- *   Recognised by, "2026" tartibi; rasm 140px.
+ *   2×628px ustun — chapda Medical degree (img 216 + content, 420px), o'ngda 2 qator
+ *   (198px): Medical services 300px + "2026" stat, Map arc 405px + Recognised by 199px.
+ * Mobile (GBFCI, 390): head vertikal, kartalar bitta ustun (gap 14) — Medical services,
+ *   Map, Recognised by, "2026" tartibi; rasm 140px.
  * Bento grid `xl` (1280+) dan boshlab: 300/199px ustunlar faqat keng konteynerda
  *   sig'di (xl'da Map kartasi 381px, dizaynda 405px — arq `w-full max-w-[348px]`).
  * Map arc — motion #11 (F4.7). SectionHeading emas: dizaynda eyebrow → H2 gap 14px,
@@ -31,19 +31,19 @@ function EducationCard({ className }: { className?: string }) {
       <picture className="block">
         <source
           type="image/avif"
-          srcSet="/img/hero-800.avif 800w, /img/hero-1600.avif 1600w"
+          srcSet="/img/edu4-800.avif 800w, /img/edu4-1600.avif 1600w"
           sizes="(min-width: 1280px) 628px, 100vw"
         />
         <source
           type="image/webp"
-          srcSet="/img/hero-800.webp 800w, /img/hero-1600.webp 1600w"
+          srcSet="/img/edu4-800.webp 800w, /img/edu4-1600.webp 1600w"
           sizes="(min-width: 1280px) 628px, 100vw"
         />
         <img
-          src="/img/hero-1600.webp"
+          src="/img/edu4-1600.webp"
           alt={t('about.bento.campusAlt')}
           width={1600}
-          height={1067}
+          height={1061}
           loading="lazy"
           decoding="async"
           className="h-[140px] w-full object-cover object-[center_66%] xl:h-[216px]"
@@ -76,7 +76,7 @@ function EducationCard({ className }: { className?: string }) {
   )
 }
 
-function CytotronCard({ className }: { className?: string }) {
+function MedicalCard({ className }: { className?: string }) {
   const { t } = useTranslation()
 
   return (
@@ -98,14 +98,23 @@ function CytotronCard({ className }: { className?: string }) {
 
       <div className="relative flex items-center justify-between gap-3">
         <h3 className="font-display text-[20px] leading-[1.2] font-bold text-hi-dark xl:text-[24px]">
-          {t('about.bento.cytotronTitle')}
+          {t('about.bento.medicalTitle')}
         </h3>
-        <IconScanLine className="size-5 shrink-0 text-care-glow" />
+        <IconStethoscope className="size-5 shrink-0 text-care-glow" />
       </div>
 
       <p className="relative text-[14.5px] leading-[1.55] text-mid-dark xl:text-[14px] xl:leading-[1.5]">
-        {t('about.bento.cytotronBody')}
+        {t('about.bento.medicalBody')}
       </p>
+
+      <a
+        href="#medical-services"
+        onClick={(event) => onAnchorClick(event, '#medical-services')}
+        className="relative mt-auto inline-flex w-fit items-center gap-1.5 pt-2 text-[14px] leading-[1.2] font-semibold text-care-glow transition-opacity duration-(--duration-fast) ease-out-soft hover:opacity-70"
+      >
+        {t('about.bento.medicalLink')}
+        <IconArrow className="size-[15px] shrink-0" />
+      </a>
     </article>
   )
 }
@@ -214,11 +223,11 @@ export function About() {
         <div className="flex flex-col gap-3.5 xl:grid xl:grid-cols-2 xl:gap-6">
           <EducationCard />
 
-          {/* Mobil: 4 ta karta bitta flex ustun (order: Cytotron → Map → Trust → 2026).
-              Desktop: 2 qator — qator A Cytotron+2026, qator B Map+Trust. */}
+          {/* Mobil: 4 ta karta bitta flex ustun (order: Medical services → Map → Trust → 2026).
+              Desktop: 2 qator — qator A Medical services+2026, qator B Map+Trust. */}
           <div className="flex flex-col gap-3.5 xl:gap-6">
             <div className="contents xl:flex xl:gap-6">
-              <CytotronCard className="order-1 xl:order-none xl:w-[300px] xl:shrink-0" />
+              <MedicalCard className="order-1 xl:order-none xl:w-[300px] xl:shrink-0" />
               <FoundedCard className="order-4 xl:order-none xl:flex-1" />
             </div>
             <div className="contents xl:flex xl:gap-6">

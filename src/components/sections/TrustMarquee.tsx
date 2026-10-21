@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next'
 import { cn } from '../../lib/cn'
 import { Marquee } from '../motion/Marquee'
 import {
+  IconActivity,
   IconAward,
   IconBadgeCheck,
-  IconCalendar,
   IconGlobe,
   IconHeartPulse,
   IconMapPin,
@@ -29,8 +29,8 @@ const BADGE_ICONS = [
   IconAward,
   IconMapPin,
   IconHeartPulse,
-  IconCalendar,
   IconGlobe,
+  IconActivity,
   IconStethoscope,
 ] as const
 

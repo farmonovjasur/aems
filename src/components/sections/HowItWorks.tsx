@@ -10,7 +10,6 @@ import {
   IconClipboardList,
   IconFileText,
   IconGraduationCap,
-  IconHeartPulse,
   IconMapPin,
   IconMessageCircle,
   IconPlane,
@@ -58,7 +57,7 @@ type PathId = (typeof PATHS)[number]
 /** Ikonkalar i18n'dan kelmaydi — har yo'l uchun dizayn §3.09/§3.05 ikonkalari. */
 const PATH_ICONS: Record<PathId, Array<ComponentType<SVGProps<SVGSVGElement>>>> = {
   students: [IconMessageCircle, IconFileText, IconGraduationCap, IconPlane, IconMapPin],
-  patients: [IconSend, IconStethoscope, IconClipboardList, IconPlane, IconHeartPulse],
+  patients: [IconSend, IconStethoscope, IconClipboardList, IconPlane, IconCircleCheck],
 }
 
 /** #12 — 5 qadam → 4 segment (oxirgi qadam 4-chi segmentni ulaydi). */
@@ -81,7 +80,12 @@ export function HowItWorks() {
   const { t } = useTranslation()
   const [path, setPath] = useState<PathId>(PATHS[0])
   const steps = t(`process.paths.${path}.steps`, { returnObjects: true }) as unknown as Step[]
-  const items = t('process.included.items', { returnObjects: true }) as unknown as string[]
+  const included = t(`process.included.${path}`, { returnObjects: true }) as unknown as {
+    title: string
+    items: string[]
+    statValue: string
+    statLabel: string
+  }
   const icons = PATH_ICONS[path]
 
   /** #12 — vertikal progress chizig'i scroll bilan to'ladi (scrub). */
@@ -115,7 +119,7 @@ export function HowItWorks() {
             tabs={PATHS.map((id) => ({
               id,
               label: t(`process.tabs.${id}`),
-              icon: id === 'students' ? <IconGraduationCap /> : <IconHeartPulse />,
+              icon: id === 'students' ? <IconGraduationCap /> : <IconStethoscope />,
             }))}
           />
         </div>
@@ -199,18 +203,18 @@ export function HowItWorks() {
             </ol>
           </div>
 
-          {/* --- Side card: "What's included" + 6–8 hafta --- */}
+          {/* --- Side card: yo'lga mos "What's included" + stat --- */}
           <aside className="flex flex-col gap-3.5 rounded-md bg-ink-900 p-5 ring-1 ring-white/8 md:flex-1 md:gap-0 md:rounded-lg md:p-7">
             <p className="font-mono text-[10.5px] tracking-[1px] text-care-glow uppercase md:text-[11px] md:tracking-[1.5px]">
               {t('process.included.eyebrow')}
             </p>
 
             <h3 className="font-display text-[20px] font-bold text-hi-dark md:text-[26px] md:leading-[1.1]">
-              {t('process.included.title')}
+              {included.title}
             </h3>
 
             <ul className="flex flex-col gap-3.5 md:mt-5">
-              {items.map((item) => (
+              {included.items.map((item) => (
                 <li key={item} className="flex items-center gap-2 md:items-start md:gap-2.5">
                   <IconCircleCheck className="size-4 shrink-0 text-edu-500 md:size-[17px]" />
                   <span className="text-[14px] leading-[1.5] text-mid-dark md:text-[14.5px]">
@@ -222,10 +226,10 @@ export function HowItWorks() {
 
             <div className="flex items-center gap-2 pt-1.5 md:mt-5 md:gap-2.5 md:pt-0">
               <p className="font-display text-[28px] leading-none font-bold text-hi-light md:font-mono md:text-[30px] md:font-semibold md:text-hi-dark">
-                {t('process.stat.value')}
+                {included.statValue}
               </p>
               <p className="min-w-0 flex-1 text-[12.5px] leading-[1.4] text-mid-dark md:text-[13px]">
-                {t('process.stat.label')}
+                {included.statLabel}
               </p>
             </div>
           </aside>

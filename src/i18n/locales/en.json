@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Amigos en Mundo — MBBS in Uzbekistan & Cancer Treatment in India",
-    "description": "Amigos en Mundo is a Bukhara-based consultancy. Student admission to MBBS in Uzbekistan and cancer treatment coordination in India — one team across two frontiers."
+    "title": "Amigos en Mundo — Health, Education & Business",
+    "description": "Amigos en Mundo is a Bukhara-based consultancy for medical treatment coordination in India, MBBS admission at universities across Uzbekistan and affiliate marketing — one team across borders."
   },
   "common": {
     "freeConsultation": "Free Consultation",
@@ -17,13 +17,15 @@
   },
   "nav": {
     "about": "About us",
-    "cancer": "Cancer treatment",
-    "cancerTargeted": "Targeted therapy",
-    "cancerTargetedSub": "Lutetium-177 · Terbium-161 · Actinium-225",
-    "cancerCytotron": "Cytotron",
-    "cancerCytotronSub": "Non-invasive RFQMR device",
-    "cancerRadiation": "Radiation therapy",
-    "cancerRadiationSub": "Elekta Versa HD LINAC",
+    "medical": "Medical services",
+    "medicalAll": "All medical services",
+    "medicalAllSub": "Six specialty groups · partner hospitals in India",
+    "medicalCancer": "Cancer care",
+    "medicalCancerSub": "Targeted radioligand therapy",
+    "medicalCytotron": "Cytotron",
+    "medicalCytotronSub": "Non-invasive RFQMR device",
+    "medicalRadiation": "Radiation therapy",
+    "medicalRadiationSub": "Elekta Versa HD LINAC",
     "caseReviewNote": "Case reviews by licensed physicians",
     "menu": "Menu",
     "close": "Close menu",
@@ -38,7 +40,7 @@
     "titleLine1": "All in one:",
     "titleAccent": "Health,",
     "titleLine2": "wealth and Education",
-    "sub": "From admission to arrival — we guide students and families every step of the way.",
+    "sub": "Health, education and business — one team in Bukhara, partners in India.",
     "servicesTitle": "Our Services",
     "affiliate": {
       "title": "Affiliate marketing",
@@ -54,11 +56,11 @@
       "link": "Explore Medical degree"
     },
     "care": {
-      "title": "Cancer treatment in India",
+      "title": "All medical services in India",
       "chip": "CARE",
-      "meta": "Targeted therapy · Cytotron · Radiation therapy",
-      "line": "Send reports — get a treatment plan",
-      "link": "Request a case review"
+      "meta": "Oncology · cardiology · orthopedics · diagnostics",
+      "line": "Send reports — get a care plan",
+      "link": "Explore medical services"
     },
     "stats": {
       "tuition": {
@@ -81,28 +83,29 @@
       "NMC",
       "FAIMER",
       "Bukhara, Uzbekistan",
-      "Cytotron India",
-      "Est. 2026",
+      "Partner hospitals in India",
       "Students from 6 countries",
+      "Six medical specialties",
       "Licensed physicians"
     ],
     "badgesLabel": "Trust and accreditation badges"
   },
   "about": {
     "eyebrow": "ABOUT AEM",
-    "titleLine1": "Two frontiers,",
-    "titleAccent": "one",
-    "titleLine2": "team behind them.",
-    "body": "Amigos en Mundo is a Bukhara-based consultancy. We guide students into MBBS programs in Uzbekistan and coordinate cancer treatment in India — from the first consultation to arrival.",
+    "titleLine1": "All in one:",
+    "titleAccent": "Health,",
+    "titleLine2": "wealth and Education",
+    "body": "Amigos en Mundo is a Bukhara-based consultancy. We coordinate medical treatment across specialties in India and guide students into MBBS programs at universities across Uzbekistan — from the first consultation to arrival.",
     "bento": {
-      "campusTitle": "Study MBBS in Uzbekistan",
-      "campusBody": "A six-year, English-medium programme at Bukhara Innovation & Medical University.",
+      "campusTitle": "Medical degree in Uzbekistan",
+      "campusBody": "A six-year, English-medium programme at BIEMU and other medical universities across Uzbekistan.",
       "campusAlt": "Students at Bukhara Innovation & Medical University",
       "educationChip": "EDUCATION",
       "learnMore": "Learn more",
       "recognisedBy": "Recognised by",
-      "cytotronTitle": "Cytotron",
-      "cytotronBody": "An advanced care option reviewed case by case with partner physicians in India.",
+      "medicalTitle": "Medical services",
+      "medicalBody": "Six specialty groups coordinated with partner hospitals in India.",
+      "medicalLink": "Explore medical services",
       "yearValue": "2026",
       "yearLabel": "EST. IN BUKHARA",
       "mapTitle": "Bukhara → India",
@@ -111,10 +114,52 @@
       "mapIndia": "INDIA"
     }
   },
+  "medical": {
+    "eyebrow": "MEDICAL SERVICES",
+    "title": "All medical services, one coordinator.",
+    "chip": "SIX SPECIALTY GROUPS",
+    "sub": "AEM coordinates treatment with partner hospitals in India across six specialty groups — from report review to travel and follow-up.",
+    "disclaimer": "AEM coordinates care; treatment is provided by partner hospitals and licensed physicians in India. Suitability, availability and costs are confirmed after a medical file review.",
+    "ctaTitle": "Need a specialty not listed?",
+    "ctaBody": "Send your reports — our team will confirm partner availability and the next step.",
+    "specialties": {
+      "oncology": {
+        "title": "Cancer care",
+        "body": "Targeted therapy, Cytotron and radiation therapy, reviewed by licensed physicians.",
+        "link": "Explore cancer care"
+      },
+      "cardiology": {
+        "title": "Cardiology",
+        "body": "Cardiac diagnostics, interventional procedures and cardiac surgery, coordinated with partner hospitals.",
+        "link": "Ask about cardiology"
+      },
+      "orthopedics": {
+        "title": "Orthopedics",
+        "body": "Joint replacement, spine and sports-injury care with partner surgeons.",
+        "link": "Ask about orthopedics"
+      },
+      "neurology": {
+        "title": "Neurology & neurosurgery",
+        "body": "Brain, spine and nerve conditions — from second opinion to surgical planning.",
+        "link": "Ask about neurology"
+      },
+      "transplant": {
+        "title": "Transplants",
+        "body": "Evaluation and coordination, subject to local law and clinical eligibility.",
+        "link": "Ask about transplants"
+      },
+      "diagnostics": {
+        "title": "Diagnostics & checkups",
+        "body": "Imaging, laboratory work and preventive health checkup packages.",
+        "link": "Ask about diagnostics"
+      }
+    }
+  },
   "cancer": {
-    "eyebrow": "CANCER TREATMENT",
+    "eyebrow": "CANCER CARE · MEDICAL SERVICES",
     "title": "Advanced cancer care by Amigos en Mundo LLC",
-    "body": "Three treatment approaches. Every plan starts with a physician review of your reports.",
+    "body": "Cancer care is one of six specialty groups we coordinate. Every plan starts with a physician review of your reports.",
+    "allServices": "See all medical services",
     "tabs": {
       "targeted": "Targeted therapy",
       "cytotron": "Cytotron",
@@ -162,11 +207,11 @@
     }
   },
   "cytotron": {
-    "eyebrow": "CYTOTRON · CARE IN INDIA",
+    "eyebrow": "CYTOTRON · FEATURED TECHNOLOGY",
     "titleLine1": "Technology-led care,",
     "titleAccent": "planned",
     "titleLine2": "for your case.",
-    "sub": "Cytotron sessions are prescribed and supervised by licensed physicians after a full report review.",
+    "sub": "Cytotron is one advanced option within the medical services we coordinate. Sessions are prescribed and supervised by licensed physicians after a full report review.",
     "captions": [
       {
         "number": "01",
@@ -224,7 +269,7 @@
     "disclaimer": "Individual results may vary. Treatment is prescribed by a licensed physician. Information on this page is not medical advice."
   },
   "radiation": {
-    "eyebrow": "RADIATION THERAPY",
+    "eyebrow": "CANCER CARE · RADIATION THERAPY",
     "h3": "Elekta Versa HD LINAC with Stereotactic Robotic 6D Couch",
     "intro": "An advanced radiation therapy system used to treat a wide range of cancers throughout the body with extreme precision. It delivers high doses of radiation directly to tumors while protecting surrounding healthy tissue.",
     "usedFor": "USED FOR",
@@ -413,49 +458,61 @@
             "note": "Share imaging, biopsy and reports — we reply within 24 hours."
           },
           {
-            "title": "Doctor review",
+            "title": "Specialist review",
             "duration": "2–3 days",
-            "note": "Case reviews by licensed physicians after a full report review."
+            "note": "Your file is reviewed by a licensed specialist at a partner hospital."
           },
           {
-            "title": "Treatment plan",
+            "title": "Treatment plan & cost",
             "duration": "3–5 days",
-            "note": "Partner clinic in India · plans issued only after medical file verification."
+            "note": "A treatment plan and written cost estimate are issued after medical file verification."
           },
           {
             "title": "Travel & arrival",
             "duration": "1–2 weeks",
-            "note": "Cases from India welcome · visa and travel support."
+            "note": "Visa invitation, travel and accommodation support for you and your companion."
           },
           {
             "title": "Treatment & follow-up",
             "duration": "scheduled",
-            "note": "Cytotron sessions are prescribed and supervised by licensed physicians."
+            "note": "Treatment at the partner hospital, with a discharge summary and follow-up plan."
           }
         ]
       }
     },
     "included": {
       "eyebrow": "WHAT'S INCLUDED",
-      "title": "From first call to campus",
-      "items": [
-        "Document translation & notarisation",
-        "Invitation letter & admission file",
-        "Visa paperwork and mock interview",
-        "Airport pickup and SIM card registration",
-        "Local guardian contact in Bukhara"
-      ]
-    },
-    "stat": {
-      "value": "6–8",
-      "label": "weeks average from consultation to invitation letter"
+      "students": {
+        "title": "From first call to campus",
+        "items": [
+          "Document translation & notarisation",
+          "Invitation letter & admission file",
+          "Visa paperwork and mock interview",
+          "Airport pickup and SIM card registration",
+          "Local guardian contact in Bukhara"
+        ],
+        "statValue": "6–8",
+        "statLabel": "weeks average from consultation to invitation letter"
+      },
+      "patients": {
+        "title": "From first report to treatment",
+        "items": [
+          "Medical file review by a licensed specialist",
+          "Second opinion from a partner hospital in India",
+          "Treatment plan and written cost estimate",
+          "Visa invitation, travel and accommodation support",
+          "Airport pickup and local coordination in India"
+        ],
+        "statValue": "24h",
+        "statLabel": "average first response after reports are received"
+      }
     }
   },
   "mbbs": {
-    "eyebrow": "STUDY MBBS IN UZBEKISTAN",
-    "title": "Bukhara Innovation & Medical University",
-    "chip": "JULY INTAKE · ENGLISH MEDIUM",
-    "keyFactsLabel": "KEY FACTS",
+    "eyebrow": "MEDICAL DEGREE IN UZBEKISTAN",
+    "title": "Medical universities across Uzbekistan",
+    "chip": "ADMISSIONS OPEN · ENGLISH MEDIUM",
+    "keyFactsLabel": "KEY FACTS · BIEMU",
     "keyFacts": [
       {
         "value": "6 years",
@@ -476,6 +533,7 @@
     ],
     "fees": {
       "title": "First-year fees",
+      "exampleNote": "Indicative first-year costs for BIEMU. Fees at other universities vary.",
       "currencyLabel": "Fee currency",
       "currency": {
         "usd": "USD",
@@ -524,7 +582,7 @@
     },
     "university": {
       "shortName": "BIEMU",
-      "full": "Bukhara Innovation & Medical University — Faculty of Medicine, Bukhara.",
+      "full": "Bukhara Innovation & Medical University — Faculty of Medicine, Bukhara. One of our partner universities across Uzbekistan.",
       "badges": ["WHO/NMC Approved", "Experienced Faculty", "Modern Labs", "English Medium"],
       "imageAlt": "BIEMU campus building"
     },
@@ -536,7 +594,7 @@
   },
   "testimonials": {
     "eyebrow": "STORIES",
-    "title": "Customer feedback & we have guided",
+    "title": "Stories from people we've guided",
     "swipe": "SWIPE →",
     "items": [
       {
@@ -571,7 +629,7 @@
     "next": {
       "title": "WHAT HAPPENS NEXT",
       "steps": [
-        "We will review your medical report",
+        "We review your request and documents",
         "A specialist contacts you within 24 hours",
         "Free 30-minute consultation"
       ]
@@ -584,6 +642,11 @@
       "countryPlaceholder": "Select your country",
       "service": "Choose service",
       "servicePlaceholder": "Choose service",
+      "serviceGroups": {
+        "health": "Medical services",
+        "education": "Education",
+        "business": "Business"
+      },
       "email": "Email address",
       "emailPlaceholder": "name@example.com",
       "gender": "Gender",
@@ -616,7 +679,7 @@
     "titleLine1": "Let's",
     "titleAccent": "talk",
     "titleLine2": "it through.",
-    "body": "Students, families and patients — tell us where you want to go and we'll map the steps, costs and timeline.",
+    "body": "Students, families and patients — tell us what you need and we'll map the steps, costs and timeline.",
     "addressLabel": "Office",
     "address": "Bukhara, Uzbekistan",
     "hours": "Mon–Sat 09:00–19:00 UZT",
@@ -637,7 +700,7 @@
     "ctaTitle": "Ready to start?",
     "ctaSub": "Free consultation — students, families and patients.",
     "wordmark": "Amigos en Mundo",
-    "tagline": "Guiding students and patients across borders.",
+    "tagline": "Health, education and business — one team.",
     "quickLinksTitle": "QUICK LINKS",
     "contactTitle": "CONTACT",
     "socialTitle": "SOCIAL",

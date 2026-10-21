@@ -12,7 +12,7 @@ import { SegmentedToggle } from '../ui/SegmentedToggle'
 import { IconBadgeCheck, IconCalendar, IconGlobe, IconMicroscope, IconUsers } from '../ui/icons'
 
 /*
- * F6.10 — 05 · Study MBBS — design.pen §3.10 (`yWS5Z` desktop 1440·1333px · `RDbr7` mobile 390·1474px).
+ * F6.10 — 05 · Medical degree — design.pen §3.10 (`yWS5Z` desktop 1440·1333px · `RDbr7` mobile 390·1474px).
  *
  * Desktop (`yWS5Z` · paper-50 · padding 96/80 · gap 40):
  *   Section Head — chapda 760px (eyebrow mono 12/2 `#3B57D9` → H2 44/1.05, gap 12), o'ngda
@@ -65,6 +65,7 @@ type Currency = 'usd' | 'inr'
 
 type Fees = {
   title: string
+  exampleNote: string
   currencyLabel: string
   currency: Record<Currency, string>
   optional: string
@@ -98,9 +99,27 @@ const BADGE_ICONS = [IconBadgeCheck, IconUsers, IconMicroscope, IconGlobe]
 const BADGE_ROWS = 2
 
 const GALLERY = [
-  { webp: '/img/bitu1-400.webp', avif: '/img/bitu1-400.avif', width: 400, height: 300 },
-  { webp: '/img/bitu2-800.webp', avif: '/img/bitu2-800.avif', width: 1280, height: 853 },
-  { webp: '/img/bitu3-640.webp', avif: '/img/bitu3-640.avif', width: 640, height: 427 },
+  {
+    webp: '/img/edu1-800.webp',
+    avif: '/img/edu1-800.avif',
+    srcSet: '/img/edu1-400.webp 400w, /img/edu1-800.webp 800w',
+    width: 800,
+    height: 532,
+  },
+  {
+    webp: '/img/edu2-800.webp',
+    avif: '/img/edu2-800.avif',
+    srcSet: '/img/edu2-400.webp 400w, /img/edu2-800.webp 800w',
+    width: 800,
+    height: 1200,
+  },
+  {
+    webp: '/img/edu3-800.webp',
+    avif: '/img/edu3-800.avif',
+    srcSet: '/img/edu3-400.webp 400w, /img/edu3-800.webp 800w',
+    width: 800,
+    height: 533,
+  },
 ] as const
 
 /** Modul darajasida — `FeeAmount` effektining `format` dependency'si barqaror bo'lsin. */
@@ -310,6 +329,7 @@ function Gallery() {
         <ImageReveal
           key={image.webp}
           src={image.webp}
+          srcSet={image.srcSet}
           alt={alts[index]}
           width={image.width}
           height={image.height}
@@ -389,6 +409,10 @@ export function StudyMBBS() {
                 />
               </div>
 
+              <p className="text-[11.5px] leading-[1.4] text-mid-light md:text-xs">
+                {fees.exampleNote}
+              </p>
+
               <ul className="flex flex-col gap-3 md:gap-4">
                 {fees.items.map((item, index) => (
                   <FeeRow
@@ -439,25 +463,25 @@ export function StudyMBBS() {
               </div>
             </div>
 
-            {/* --- ② University card (BIEMU) --- */}
-            <article className="flex flex-col overflow-hidden rounded-md bg-white ring-1 ring-ink-900/8 ring-inset md:h-[264px] md:flex-row md:rounded-lg md:shadow-bento">
+            {/* --- ② University card (featured partner: BIEMU) --- */}
+            <article className="flex flex-col overflow-hidden rounded-md bg-white ring-1 ring-ink-900/8 ring-inset md:min-h-[264px] md:flex-row md:rounded-lg md:shadow-bento">
               <div className="h-[170px] shrink-0 md:h-auto md:w-[300px] md:shrink-0">
                 <picture>
                   <source
                     type="image/avif"
-                    srcSet="/img/hero-800.avif 800w, /img/hero-1600.avif 1600w"
+                    srcSet="/img/bitu3-320.avif 320w, /img/bitu3-640.avif 640w"
                     sizes="(min-width: 1280px) 300px, 100vw"
                   />
                   <source
                     type="image/webp"
-                    srcSet="/img/hero-800.webp 800w, /img/hero-1600.webp 1600w"
+                    srcSet="/img/bitu3-320.webp 320w, /img/bitu3-640.webp 640w"
                     sizes="(min-width: 1280px) 300px, 100vw"
                   />
                   <img
-                    src="/img/hero-1600.webp"
+                    src="/img/bitu3-640.webp"
                     alt={t('mbbs.university.imageAlt')}
-                    width={1600}
-                    height={1067}
+                    width={640}
+                    height={640}
                     loading="lazy"
                     decoding="async"
                     className="h-full w-full object-cover"

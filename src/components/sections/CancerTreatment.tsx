@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { onAnchorClick } from '../../lib/anchors'
 import { cn } from '../../lib/cn'
 import { Container } from '../ui/Container'
+import { IconArrow } from '../ui/icons'
 
 /*
  * F6.4 — 04 · Cancer Treatment — design.pen §3.04.
@@ -111,6 +112,15 @@ export function CancerTreatment() {
             <p className="mx-auto max-w-[640px] text-[15px] leading-[1.55] text-mid-light md:mx-0 md:text-base">
               {t('cancer.body')}
             </p>
+
+            <a
+              href="#medical-services"
+              onClick={(event) => onAnchorClick(event, '#medical-services')}
+              className="mx-auto inline-flex w-fit items-center gap-1.5 text-[14px] font-semibold text-stories transition-opacity duration-(--duration-fast) ease-out-soft hover:opacity-70 md:mx-0"
+            >
+              {t('cancer.allServices')}
+              <IconArrow className="size-3.5 shrink-0" />
+            </a>
           </div>
 
           {/* Mobil: 3 ta teng kenglikdagi tab (active = ink-900 to'ldirma). */}

@@ -15,6 +15,7 @@ import { CancerTreatment } from '../components/sections/CancerTreatment'
 import { Contact } from '../components/sections/Contact'
 import { Cytotron } from '../components/sections/Cytotron'
 import { HowItWorks } from '../components/sections/HowItWorks'
+import { MedicalServices } from '../components/sections/MedicalServices'
 import { RadiationTherapy } from '../components/sections/RadiationTherapy'
 import { Registration } from '../components/sections/Registration'
 import { StudyMBBS } from '../components/sections/StudyMBBS'
@@ -24,7 +25,7 @@ import { Kitob } from './Kitob'
 
 /*
  * F5 — layout qobig'i: Nav + main + Footer + StickyCTA + WhatsAppFAB + progress + cursor.
- * F6 (14 section) shu main ichini to'ldiradi. /kitob — dev-only primitivlar sahifasi.
+ * F6 (15 section) shu main ichini to'ldiradi. /kitob — dev-only primitivlar sahifasi.
  */
 export function App() {
   const { t } = useTranslation()
@@ -52,6 +53,7 @@ export function App() {
         <Hero />
         <TrustMarquee />
         <About />
+        <MedicalServices />
         <CancerTreatment />
         <Cytotron />
         <RadiationTherapy />

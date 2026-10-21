@@ -8,6 +8,10 @@ import { ensureGsap, prefersReducedMotion } from './motion'
  * F6 section'lari hali yo'q anchor'lar jimgina o'tkazib yuboriladi.
  */
 const ANCHOR_ALIASES: Record<string, string[]> = {
+  medical: ['medical', 'medical-services', 'services', 'health'],
+  'medical-services': ['medical-services', 'medical', 'services', 'health'],
+  services: ['services', 'medical-services', 'medical', 'health'],
+  health: ['health', 'medical-services', 'medical', 'services'],
   cancer: ['cancer', 'cancer-treatment', 'targeted'],
   'cancer-treatment': ['cancer-treatment', 'cancer', 'targeted'],
   targeted: ['targeted', 'cancer-treatment', 'cancer'],
@@ -36,13 +40,17 @@ export function scrollToAnchor(hash: string) {
   }
   if (!target) return
 
+  /* Refresh BEFORE scrolling: ScrollTrigger.refresh() interrupts an in-flight
+   * native smooth scroll, which left #registration (and other far anchors)
+   * stopping short of the target. Measuring first keeps triggers accurate
+   * without cancelling the scroll animation. */
+  ensureGsap()
+  ScrollTrigger.refresh()
+
   target.scrollIntoView({
     behavior: prefersReducedMotion() ? 'auto' : 'smooth',
     block: 'start',
   })
-
-  ensureGsap()
-  window.setTimeout(() => ScrollTrigger.refresh(), 700)
 }
 
 /** <a href="#..."> uchun: default jump'ni silliq scroll'ga almashtiradi (modifier-click'lar tegilmaydi). */

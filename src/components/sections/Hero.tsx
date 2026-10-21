@@ -122,7 +122,7 @@ export function Hero() {
     },
     {
       tone: 'violet',
-      hash: '#cancer-treatment',
+      hash: '#medical-services',
       Icon: IconHeartPulse,
       chip: t('hero.care.chip'),
       title: t('hero.care.title'),

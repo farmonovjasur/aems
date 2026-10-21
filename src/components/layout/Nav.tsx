@@ -6,41 +6,55 @@ import { onAnchorClick } from '../../lib/anchors'
 import { cn } from '../../lib/cn'
 import { EASE_SOFT, ensureGsap } from '../../lib/motion'
 import { ButtonLink } from '../ui/Button'
-import { IconActivity, IconArrow, IconChevron, IconCpu, IconTarget } from '../ui/icons'
+import {
+  IconActivity,
+  IconArrow,
+  IconChevron,
+  IconCpu,
+  IconStethoscope,
+  IconTarget,
+} from '../ui/icons'
 import { LanguageSwitcher } from './LanguageSwitcher'
 import { MobileMenu } from './MobileMenu'
 import { NAV_LINKS } from './nav-links'
 
 /*
  * Nav/States (TIMP2 in design.pen):
- * Mega-menu for cancer treatments (MjY0q):
- * 1. Targeted therapy (#cancer-treatment)
- * 2. Cytotron (#cytotron)
- * 3. Radiation therapy (#radiation-therapy)
+ * Mega-menu for medical services:
+ * 1. All medical services (#medical-services)
+ * 2. Cancer care (#cancer-treatment)
+ * 3. Cytotron (#cytotron)
+ * 4. Radiation therapy (#radiation-therapy)
  * Bottom link: "Request a case review ->" (#registration)
  */
-const CANCER_ITEMS = [
+const MEDICAL_ITEMS = [
   {
-    key: 'cancerTargeted',
-    subKey: 'cancerTargetedSub',
+    key: 'medicalAll',
+    subKey: 'medicalAllSub',
+    hash: '#medical-services',
+    Icon: IconStethoscope,
+  },
+  {
+    key: 'medicalCancer',
+    subKey: 'medicalCancerSub',
     hash: '#cancer-treatment',
     Icon: IconTarget,
   },
   {
-    key: 'cancerCytotron',
-    subKey: 'cancerCytotronSub',
+    key: 'medicalCytotron',
+    subKey: 'medicalCytotronSub',
     hash: '#cytotron',
     Icon: IconCpu,
   },
   {
-    key: 'cancerRadiation',
-    subKey: 'cancerRadiationSub',
+    key: 'medicalRadiation',
+    subKey: 'medicalRadiationSub',
     hash: '#radiation-therapy',
     Icon: IconActivity,
   },
 ]
 
-function CancerDropdown({ isActive, onActivate }: { isActive: boolean; onActivate: () => void }) {
+function MedicalDropdown({ isActive, onActivate }: { isActive: boolean; onActivate: () => void }) {
   const { t } = useTranslation()
   const [open, setOpen] = useState(false)
   const rootRef = useRef<HTMLDivElement>(null)
@@ -75,7 +89,7 @@ function CancerDropdown({ isActive, onActivate }: { isActive: boolean; onActivat
           type="button"
           aria-expanded={open}
           aria-haspopup="true"
-          aria-controls="nav-cancer-menu"
+          aria-controls="nav-medical-menu"
           onClick={() => setOpen((value) => !value)}
           onKeyDown={(event) => {
             if (event.key === 'ArrowDown') {
@@ -93,7 +107,7 @@ function CancerDropdown({ isActive, onActivate }: { isActive: boolean; onActivat
               : 'bg-transparent text-white/72 hover:bg-white/[0.08] hover:text-hi-dark',
           )}
         >
-          <span>{t('nav.cancer')}</span>
+          <span>{t('nav.medical')}</span>
           <IconChevron
             className={cn(
               'size-3.5 shrink-0 transition-transform ease-out-soft duration-(--duration-fast)',
@@ -112,7 +126,7 @@ function CancerDropdown({ isActive, onActivate }: { isActive: boolean; onActivat
 
       {/* Dropdown mega-menu: MjY0q in design.pen (560px, rounded-16, fill $ink-900, pad 12, gap 4) */}
       <div
-        id="nav-cancer-menu"
+        id="nav-medical-menu"
         className={cn(
           'absolute top-full left-1/2 z-30 -translate-x-1/2 pt-2',
           !open && 'pointer-events-none',
@@ -120,7 +134,7 @@ function CancerDropdown({ isActive, onActivate }: { isActive: boolean; onActivat
       >
         <div
           role="menu"
-          aria-label={t('nav.cancer')}
+          aria-label={t('nav.medical')}
           className={cn(
             'w-[560px] rounded-[16px] border border-white/10 bg-ink-900/95 p-3 shadow-[0_16px_40px_rgba(0,0,0,0.4)] backdrop-blur-2xl',
             'transition-[opacity,transform] ease-out-soft duration-(--duration-fast)',
@@ -128,7 +142,7 @@ function CancerDropdown({ isActive, onActivate }: { isActive: boolean; onActivat
           )}
         >
           <div className="flex flex-col gap-1">
-            {CANCER_ITEMS.map((item, index) => (
+            {MEDICAL_ITEMS.map((item, index) => (
               <a
                 key={item.key}
                 ref={(el) => {
@@ -232,6 +246,14 @@ export function Nav() {
   useEffect(() => {
     const resolveActive = () => {
       const hash = window.location.hash.replace(/^#/, '')
+      if (
+        ['cancer-treatment', 'targeted', 'cytotron', 'radiation', 'radiation-therapy'].includes(
+          hash,
+        )
+      ) {
+        setActiveKey('medical')
+        return
+      }
       const match = NAV_LINKS.find((l) => {
         const linkId = l.hash.replace(/^#/, '')
         return (
@@ -281,7 +303,7 @@ export function Nav() {
     <>
       <header ref={elRef} className="fixed inset-x-0 top-0 z-40">
         {/* Mobile Navbar: QU0iP in design.pen (358px floating pill, padding [4, 8, 4, 14], blur 20) */}
-        <div className="mx-auto w-full px-4 pt-4 lg:hidden">
+        <div className="mx-auto w-full px-4 pt-4 xl:hidden">
           <div className="mx-auto flex h-[52px] max-w-[358px] items-center justify-between rounded-full border border-white/10 bg-white/[0.06] pt-1 pr-2 pb-1 pl-3.5 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]">
             {/* Brand Wordmark: mbynv in design.pen */}
             <a
@@ -320,10 +342,10 @@ export function Nav() {
         </div>
 
         {/* Desktop Navbar: C1J7iH in design.pen (1440x72, fill #060913D9, padding [0, 80], border-b #FFFFFF1A) */}
-        <div className="hidden border-b border-white/10 bg-ink-950/85 backdrop-blur-xl lg:block">
+        <div className="hidden border-b border-white/10 bg-ink-950/85 backdrop-blur-xl xl:block">
           <div className="mx-auto flex h-[72px] w-full max-w-[1440px] items-center justify-between px-6 xl:px-[80px]">
             {/* Brand: G32Hae in design.pen */}
-            <div className="flex w-[201px] items-center">
+            <div className="flex w-[150px] items-center min-[1400px]:w-[201px]">
               <a
                 href="#main"
                 onClick={(event) => onAnchorClick(event, '#main')}
@@ -335,13 +357,13 @@ export function Nav() {
             </div>
 
             {/* Menu: W2OISZ in design.pen (gap 32px, 6 items) */}
-            <nav aria-label={t('nav.menu')} className="flex items-center gap-8">
+            <nav aria-label={t('nav.menu')} className="flex items-center gap-4 min-[1400px]:gap-8">
               {NAV_LINKS.map((link) =>
-                link.key === 'cancer' ? (
-                  <CancerDropdown
+                link.key === 'medical' ? (
+                  <MedicalDropdown
                     key={link.key}
-                    isActive={activeKey === 'cancer'}
-                    onActivate={() => setActiveKey('cancer')}
+                    isActive={activeKey === 'medical'}
+                    onActivate={() => setActiveKey('medical')}
                   />
                 ) : (
                   <div

@@ -1,6 +1,6 @@
 # AEM 2026 — Landing
 
-Amigos en Mundo (Bukhara) landing page.
+Amigos en Mundo (Bukhara) landing page — medical services, MBBS admission and affiliate marketing.
 
 ## Stack
 

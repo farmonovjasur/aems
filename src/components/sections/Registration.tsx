@@ -1,11 +1,12 @@
-import { useMemo, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import { gsap } from 'gsap'
 import { useSafeMotion } from '../../hooks/useSafeMotion'
 import { CONTACT } from '../../lib/contacts'
 import { COUNTRIES, countryName, toLocale } from '../../lib/countries'
 import { DUR, EASE_SOFT, ensureGsap, useIsomorphicLayoutEffect } from '../../lib/motion'
-import { SERVICES, serviceName } from '../../lib/services'
+import { SERVICE_GROUPS, SERVICES, serviceName } from '../../lib/services'
+import { SERVICE_SELECTION_EVENT } from '../../lib/service-selection'
 import { sendLead } from '../../lib/telegram'
 import { Button, ButtonLink } from '../ui/Button'
 import { Container } from '../ui/Container'
@@ -157,6 +158,18 @@ export function Registration() {
   const [errors, setErrors] = useState<Partial<Record<FieldName, string>>>({})
   const [status, setStatus] = useState<Status>('idle')
   const [honeypot, setHoneypot] = useState('')
+
+  useEffect(() => {
+    const onPreselect = (event: Event) => {
+      const value = (event as CustomEvent<string>).detail
+      if (!SERVICES.some((service) => service.value === value)) return
+      setValues((current) => ({ ...current, service: value }))
+      setErrors((current) => ({ ...current, service: undefined }))
+      setStatus((current) => (current === 'sent' || current === 'error' ? 'idle' : current))
+    }
+    window.addEventListener(SERVICE_SELECTION_EVENT, onPreselect)
+    return () => window.removeEventListener(SERVICE_SELECTION_EVENT, onPreselect)
+  }, [])
 
   const countryOptions = useMemo(
     () => [...COUNTRIES].sort((a, b) => a.names[locale].localeCompare(b.names[locale], locale)),
@@ -376,10 +389,17 @@ export function Registration() {
                     className={values.service ? undefined : 'text-mid-light'}
                   >
                     <option value="">{t('registration.form.servicePlaceholder')}</option>
-                    {SERVICES.map((service) => (
-                      <option key={service.value} value={service.value}>
-                        {service.names[locale]}
-                      </option>
+                    {SERVICE_GROUPS.map((group) => (
+                      <optgroup
+                        key={group}
+                        label={t(`registration.form.serviceGroups.${group}`)}
+                      >
+                        {SERVICES.filter((service) => service.group === group).map((service) => (
+                          <option key={service.value} value={service.value}>
+                            {service.names[locale]}
+                          </option>
+                        ))}
+                      </optgroup>
                     ))}
                   </Select>
 

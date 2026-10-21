@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Amigos en Mundo — O'zbekistonda MBBS va Hindistonda saraton davolash",
-    "description": "Amigos en Mundo — Buxoroda joylashgan konsalting kompaniyasi. O'zbekistonda MBBS ta'limiga qabul va Hindistonda saraton davolashni muvofiqlashtirish — ikki yo'nalishda bitta jamoa."
+    "title": "Amigos en Mundo — Salomatlik, ta'lim va biznes",
+    "description": "Amigos en Mundo — Buxoroda joylashgan konsalting kompaniyasi: Hindistonda tibbiy davolashni muvofiqlashtirish, O'zbekistondagi barcha universitetlarda MBBS qabuli va affiliate marketing — chegara ortida bitta jamoa."
   },
   "common": {
     "freeConsultation": "Bepul konsultatsiya",
@@ -17,13 +17,15 @@
   },
   "nav": {
     "about": "Biz haqimizda",
-    "cancer": "Saraton davolash",
-    "cancerTargeted": "Maqsadli terapiya",
-    "cancerTargetedSub": "Lutetium-177 · Terbiy-161 · Aktiniy-225",
-    "cancerCytotron": "Cytotron",
-    "cancerCytotronSub": "Invaziv bo'lmagan RFQMR qurilmasi",
-    "cancerRadiation": "Nurlanish terapiyasi",
-    "cancerRadiationSub": "Elekta Versa HD LINAC",
+    "medical": "Tibbiy xizmatlar",
+    "medicalAll": "Barcha tibbiy xizmatlar",
+    "medicalAllSub": "Oltita yo'nalish · Hindistondagi hamkor klinikalar",
+    "medicalCancer": "Saraton davolash",
+    "medicalCancerSub": "Maqsadli radiologand terapiya",
+    "medicalCytotron": "Cytotron",
+    "medicalCytotronSub": "Invaziv bo'lmagan RFQMR qurilmasi",
+    "medicalRadiation": "Radioterapiya",
+    "medicalRadiationSub": "Elekta Versa HD LINAC",
     "caseReviewNote": "Tekshiruvlar litsenziyali shifokorlar tomonidan o'tkaziladi",
     "menu": "Menyu",
     "close": "Menyuni yopish",
@@ -31,14 +33,14 @@
     "admission": "Talaba qabuli",
     "registration": "Ro'yxatdan o'tish",
     "contacts": "Kontaktlar",
-    "cta": "Bepul konsultatsiya"
+    "cta": "Bepul maslahat"
   },
   "hero": {
     "eyebrow": "AMIGOS EN MUNDO — 2026-YILDAN · BUXORO",
     "titleLine1": "Hammasi bir joyda:",
     "titleAccent": "Salomatlik,",
     "titleLine2": "boylik va ta'lim",
-    "sub": "Qabuldan yetib borishgacha — talabalar va oilalarga har bir qadamda hamroh bo'lamiz.",
+    "sub": "Salomatlik, ta'lim va biznes — Buxoroda bitta jamoa, Hindistonda hamkorlar.",
     "servicesTitle": "Xizmatlarimiz",
     "affiliate": {
       "title": "Affiliate marketing",
@@ -54,11 +56,11 @@
       "link": "Tibbiy ta'limni ko'rish"
     },
     "care": {
-      "title": "Hindistonda saraton davolash",
+      "title": "Hindistonda barcha tibbiy xizmatlar",
       "chip": "DAVOLASH",
-      "meta": "Maqsadli terapiya · Cytotron · Nurlanish terapiyasi",
-      "line": "Tekshiruvlarni yuboring — davolash rejasini oling",
-      "link": "Holatni ko'rib chiqishni so'rash"
+      "meta": "Onkologiya · kardiologiya · ortopediya · diagnostika",
+      "line": "Hujjatlaringizni yuboring — davolash rejasini oling",
+      "link": "Tibbiy xizmatlarni ko'rish"
     },
     "stats": {
       "tuition": {
@@ -81,28 +83,29 @@
       "NMC",
       "FAIMER",
       "Buxoro, O'zbekiston",
-      "Cytotron Hindiston",
-      "2026-yildan",
+      "Hindistondagi hamkor klinikalar",
       "6 davlatdan talabalar",
-      "Litsenziyalangan shifokorlar"
+      "Oltita tibbiy yo'nalish",
+      "Litsenziyali shifokorlar"
     ],
     "badgesLabel": "Ishonch va akkreditatsiya belgilari"
   },
   "about": {
     "eyebrow": "AEM HAQIDA",
-    "titleLine1": "Ikki yo'nalish,",
-    "titleAccent": "bitta",
-    "titleLine2": "jamoa.",
-    "body": "Amigos en Mundo — Buxoroda joylashgan konsalting kompaniyasi. O'zbekistondagi MBBS dasturlariga talabalarni yo'naltiramiz va Hindistonda saraton davolashni muvofiqlashtiramiz — birinchi suhbatdan yetib borishgacha.",
+    "titleLine1": "Hammasi bir joyda:",
+    "titleAccent": "Salomatlik,",
+    "titleLine2": "boylik va ta'lim",
+    "body": "Amigos en Mundo — Buxoroda joylashgan konsalting kompaniyasi. Hindistonda turli yo'nalishlarda tibbiy davolashni muvofiqlashtiramiz va talabalarni O'zbekistondagi barcha universitetlarning MBBS dasturlariga yo'naltiramiz — birinchi konsultatsiyadan yetib borishgacha.",
     "bento": {
-      "campusTitle": "O'zbekistonda MBBS",
-      "campusBody": "Buxoro Innovatsion va Tibbiyot Universitetida 6 yillik, ingliz tilida o'qitiladigan dastur.",
+      "campusTitle": "O'zbekistonda tibbiyot diplomi",
+      "campusBody": "BIEMU va O'zbekistondagi boshqa tibbiyot universitetlarida 6 yillik, ingliz tilida o'qitiladigan dastur.",
       "campusAlt": "Buxoro Innovatsion va Tibbiyot Universiteti talabalari",
       "educationChip": "TA'LIM",
       "learnMore": "Batafsil",
       "recognisedBy": "Tan olingan manbalar",
-      "cytotronTitle": "Cytotron",
-      "cytotronBody": "Hindistondagi hamkor shifokorlar bilan har bir holat alohida ko'rib chiqiladigan ilg'or davolash usuli.",
+      "medicalTitle": "Tibbiy xizmatlar",
+      "medicalBody": "Hindistondagi hamkor klinikalar bilan oltita tibbiy yo'nalish.",
+      "medicalLink": "Tibbiy xizmatlarni ko'rish",
       "yearValue": "2026",
       "yearLabel": "BUXORODA TASHKIL ETILGAN",
       "mapTitle": "Buxoro → Hindiston",
@@ -111,10 +114,52 @@
       "mapIndia": "HINDISTON"
     }
   },
+  "medical": {
+    "eyebrow": "TIBBIY XIZMATLAR",
+    "title": "Barcha tibbiy xizmatlar — bitta muvofiqlashtiruvchi.",
+    "chip": "OLTITA YO'NALISH",
+    "sub": "AEM Hindistondagi hamkor klinikalar bilan oltita tibbiy yo'nalish bo'yicha davolashni muvofiqlashtiradi — hujjatlarni ko'rib chiqishdan safari va kuzatuvgacha.",
+    "disclaimer": "AEM davolashni muvofiqlashtiradi; davolash Hindistondagi hamkor klinikalar va litsenziyali shifokorlar tomonidan amalga oshiriladi. Moslik, mavjudlik va narxlar tibbiy hujjatlar ko'rib chiqilgandan so'ng tasdiqlanadi.",
+    "ctaTitle": "Kerakli yo'nalish ro'yxatda yo'qmi?",
+    "ctaBody": "Hujjatlaringizni yuboring — jamoamiz hamkor klinika mavjudligi va keyingi qadamni tasdiqlaydi.",
+    "specialties": {
+      "oncology": {
+        "title": "Saraton davolash",
+        "body": "Maqsadli terapiya, Cytotron va radioterapiya — litsenziyali shifokorlar tomonidan ko'rib chiqiladi.",
+        "link": "Saraton davolash bilan tanishish"
+      },
+      "cardiology": {
+        "title": "Kardiologiya",
+        "body": "Yurak diagnostikasi, intervencion muolajalar va yurak jarrohligi — hamkor klinikalar bilan muvofiqlashtiriladi.",
+        "link": "Kardiologiya haqida so'rash"
+      },
+      "orthopedics": {
+        "title": "Ortopediya",
+        "body": "Bo'g'im almashtirish, umurtqa pog'onasi va sport jarohatlari — hamkor jarrohlar bilan.",
+        "link": "Ortopediya haqida so'rash"
+      },
+      "neurology": {
+        "title": "Nevrologiya va neyroxirurgiya",
+        "body": "Miya, umurtqa va nerv kasalliklari — ikkinchi fikrdan jarrohlik rejalashtirishgacha.",
+        "link": "Nevrologiya haqida so'rash"
+      },
+      "transplant": {
+        "title": "Transplantatsiya",
+        "body": "Baholash va muvofiqlashtirish — mahalliy qonunchilik va klinik mezonlarga muvofiq.",
+        "link": "Transplantatsiya haqida so'rash"
+      },
+      "diagnostics": {
+        "title": "Diagnostika va check-up",
+        "body": "Tasvirlash, laboratoriya tekshiruvlari va profilaktik check-up paketlari.",
+        "link": "Diagnostika haqida so'rash"
+      }
+    }
+  },
   "cancer": {
-    "eyebrow": "SARATON DAVOLASH",
+    "eyebrow": "SARATON DAVOLASH · TIBBIY XIZMATLAR",
     "title": "Amigos en Mundo LLC bilan ilg'or saraton davolash",
-    "body": "Uchta davolash yondashuvi. Har bir reja sizning hisobotlaringizni shifokor ko'rib chiqishidan boshlanadi.",
+    "body": "Saraton davolash — biz muvofiqlashtiradigan oltita yo'nalishdan biri. Har bir reja hujjatlaringizni shifokor ko'rib chiqishidan boshlanadi.",
+    "allServices": "Barcha tibbiy xizmatlarni ko'rish",
     "tabs": {
       "targeted": "Maqsadli terapiya",
       "cytotron": "Cytotron",
@@ -162,11 +207,11 @@
     }
   },
   "cytotron": {
-    "eyebrow": "CYTOTRON · HINDISTONDA",
+    "eyebrow": "CYTOTRON · TANLANGAN TEXNOLOGIYA",
     "titleLine1": "Texnologiyaga asoslangan davolash,",
     "titleAccent": "sizning holatingiz",
     "titleLine2": "uchun rejalashtirilgan.",
-    "sub": "Cytotron seanslari to'liq tekshiruv ko'rib chiqilgandan so'ng litsenziyalangan shifokorlar tomonidan tayinlanadi va nazorat qilinadi.",
+    "sub": "Cytotron — biz muvofiqlashtiradigan tibbiy xizmatlar ichidagi ilg'or variantlardan biri. Seanslar to'liq hujjatlar ko'rib chiqilgandan so'ng litsenziyali shifokorlar tomonidan tayinlanadi va nazorat qilinadi.",
     "captions": [
       {
         "number": "01",
@@ -224,7 +269,7 @@
     "disclaimer": "Natijalar har bir bemorda farq qilishi mumkin. Davolashni litsenziyalangan shifokor tayinlaydi. Ushbu sahifadagi ma'lumotlar tibbiy maslahat emas."
   },
   "radiation": {
-    "eyebrow": "NURLANISH TERAPIYASI",
+    "eyebrow": "SARATON DAVOLASH · RADIOTERAPIYA",
     "h3": "Elekta Versa HD LINAC va Stereotaktik Robotik 6D stol",
     "intro": "Butun tana bo'ylab keng turdagi raklarni juda aniq davolash uchun ishlatiladigan ilg'or nurlanish terapiyasi tizimi. U atrof-muhitdagi sog'lom to'qimani himoya qilib, nurni bevosita o'smalarga yuqori dozalarda yetkazib beradi.",
     "usedFor": "QO'LLANILADI",
@@ -384,18 +429,30 @@
     },
     "included": {
       "eyebrow": "NIMALAR KIRADI",
-      "title": "Birinchi qo'ng'iroqdan kampusgacha",
-      "items": [
-        "Hujjatlarni tarjima qilish va notarial tasdiqlash",
-        "Taklifnoma xati va qabul fayli",
-        "Viza hujjatlari va mashq suhbati",
-        "Aeroportdan kutib olish va SIM karta ro'yxatdan o'tkazish",
-        "Buxoroda mahalliy vasiy aloqasi"
-      ]
-    },
-    "stat": {
-      "value": "6–8",
-      "label": "hafta — konsultatsiyadan taklifnomagacha o‘rtacha"
+      "students": {
+        "title": "Birinchi qo'ng'iroqdan kampusgacha",
+        "items": [
+          "Hujjatlarni tarjima qilish va notarial tasdiqlash",
+          "Taklifnoma xati va qabul fayli",
+          "Viza hujjatlari va mashq suhbati",
+          "Aeroportdan kutib olish va SIM karta ro'yxatdan o'tkazish",
+          "Buxoroda mahalliy vasiy aloqasi"
+        ],
+        "statValue": "6–8",
+        "statLabel": "hafta — konsultatsiyadan taklifnomagacha o‘rtacha"
+      },
+      "patients": {
+        "title": "Birinchi hisobotdan davolashgacha",
+        "items": [
+          "Litsenziyali mutaxassis tomonidan tibbiy hujjatlar ko'rib chiqilishi",
+          "Hindistondagi hamkor klinikadan ikkinchi fikr",
+          "Davolash rejasi va yozma narx smetasi",
+          "Viza taklifnomasi, yo'l va turar joy yordami",
+          "Aeroportdan kutib olish va Hindistonda mahalliy muvofiqlashtirish"
+        ],
+        "statValue": "24 soat",
+        "statLabel": "hisobotlar qabul qilingandan keyin o'rtacha birinchi javob"
+      }
     },
     "paths": {
       "students": {
@@ -435,34 +492,34 @@
             "note": "Tashxis, biopsiya va hisobotlarni yuboring — 24 soat ichida javob beramiz."
           },
           {
-            "title": "Shifokor ko‘rigi",
+            "title": "Mutaxassis ko'rigi",
             "duration": "2–3 kun",
-            "note": "To‘liq hisobot ko‘rilgandan keyin litsenziyali shifokorlar holatni baholaydi."
+            "note": "Hujjatlaringiz hamkor klinikadagi litsenziyali mutaxassis tomonidan ko'rib chiqiladi."
           },
           {
-            "title": "Davolash rejasi",
+            "title": "Davolash rejasi va narx",
             "duration": "3–5 kun",
-            "note": "Hindistandagi sherik klinika · reja faqat medfayl tekshirilgach beriladi."
+            "note": "Tibbiy hujjatlar tekshirilgandan so'ng davolash rejasi va yozma narx smetasi beriladi."
           },
           {
-            "title": "Sayohat va yetib borish",
+            "title": "Safar va yetib borish",
             "duration": "1–2 hafta",
-            "note": "Hindistondan kelgan holatlar · viza va sayohat yordami."
+            "note": "Viza taklifnomasi, yo'l va turar joy bo'yicha yordam — siz va hamrohingiz uchun."
           },
           {
             "title": "Davolash va kuzatuv",
-            "duration": "rejalashtirilgan",
-            "note": "Cytotron seanslari litsenziyali shifokor tomonidan belgilanadi va nazorat qilinadi."
+            "duration": "jadval bo'yicha",
+            "note": "Hamkor klinikada davolash, epikriz va kuzatuv rejasi bilan."
           }
         ]
       }
     }
   },
   "mbbs": {
-    "eyebrow": "O'ZBEKISTONDA MBBS",
-    "title": "Buxoro Innovatsion va Tibbiyot Universiteti",
-    "chip": "IYUL QABULI · INGLIZ TILIDA",
-    "keyFactsLabel": "ASOSIY MA'LUMOTLAR",
+    "eyebrow": "O'ZBEKISTONDA TIBBIYOT DIPLOMI",
+    "title": "O'zbekiston bo'ylab tibbiyot universitetlari",
+    "chip": "QABUL OCHIQ · INGLIZ TILIDA",
+    "keyFactsLabel": "ASOSIY MA'LUMOTLAR · BIEMU",
     "keyFacts": [
       {
         "value": "6 yil",
@@ -483,6 +540,7 @@
     ],
     "fees": {
       "title": "Birinchi yil to'lovlari",
+      "exampleNote": "BIEMU uchun indikativ birinchi yil to'lovlari. Boshqa universitetlarda to'lovlar farq qiladi.",
       "currencyLabel": "To'lov valyutasi",
       "currency": {
         "usd": "USD",
@@ -531,7 +589,7 @@
     },
     "university": {
       "shortName": "BIEMU",
-      "full": "Buxoro Innovatsion va Tibbiyot Universiteti — Tibbiyot fakulteti, Buxoro.",
+      "full": "Buxoro Innovatsion va Tibbiyot Universiteti — Tibbiyot fakulteti, Buxoro. O'zbekiston bo'ylab hamkor universitetlarimizdan biri.",
       "badges": [
         "WHO/NMC tasdiqlangan",
         "Tajribali professorlar",
@@ -548,7 +606,7 @@
   },
   "testimonials": {
     "eyebrow": "HIKOYALAR",
-    "title": "Mijozlar fikri va biz yo'l ko'rsatganlar",
+    "title": "Biz yo'l ko'rsatgan insonlar hikoyalari",
     "swipe": "SURING →",
     "items": [
       {
@@ -583,7 +641,7 @@
     "next": {
       "title": "KEYIN NIMA BO'LADI",
       "steps": [
-        "Tibbiy hisobotingizni ko'rib chiqamiz",
+        "So'rovingiz va hujjatlaringizni ko'rib chiqamiz",
         "Mutaxassis 24 soat ichida siz bilan bog'lanadi",
         "Bepul 30 daqiqalik konsultatsiya"
       ]
@@ -596,6 +654,11 @@
       "countryPlaceholder": "Davlatni tanlang",
       "service": "Xizmatni tanlang",
       "servicePlaceholder": "Xizmatni tanlang",
+      "serviceGroups": {
+        "health": "Tibbiy xizmatlar",
+        "education": "Ta'lim",
+        "business": "Biznes"
+      },
       "email": "Email manzil",
       "emailPlaceholder": "name@example.com",
       "gender": "Jins",
@@ -628,7 +691,7 @@
     "titleLine1": "Keling,",
     "titleAccent": "birga",
     "titleLine2": "muhokama qilamiz.",
-    "body": "Talabalar, oilalar va bemorlar — qayerga intilayotganingizni ayting, biz qadamlar, xarajat va muddatni ko'rsatamiz.",
+    "body": "Talabalar, oilalar va bemorlar — nima kerakligini ayting, biz qadamlar, xarajat va muddatni ko'rsatamiz.",
     "addressLabel": "Ofis",
     "address": "Buxoro, O'zbekiston",
     "hours": "Du–Sha 09:00–19:00 UZT",
@@ -649,7 +712,7 @@
     "ctaTitle": "Boshlashga tayyormisiz?",
     "ctaSub": "Bepul konsultatsiya — talabalar, oilalar va bemorlar uchun.",
     "wordmark": "Amigos en Mundo",
-    "tagline": "Talabalar va bemorlarni chegaralar ortida yo'l ko'rsatib boramiz.",
+    "tagline": "Salomatlik, ta'lim va biznes — bitta jamoa.",
     "quickLinksTitle": "TEZKOR HAVOLALAR",
     "contactTitle": "KONTAKTLAR",
     "socialTitle": "IJTIMOIY TARMOQLAR",

@@ -3,7 +3,7 @@ import { useIsomorphicLayoutEffect } from '../../lib/motion'
 import { cn } from '../../lib/cn'
 
 /*
- * F6.10 — SegmentedToggle — motion notes · Effects #13 (05 · Study MBBS, `yWS5Z` `fXh13`).
+ * F6.10 — SegmentedToggle — motion notes · Effects #13 (05 · Medical degree, `yWS5Z` `fXh13`).
  *
  * Nima uchun `Tabs` emas: `Tabs variant="segment"` How it works uchun yasalgan —
  * label 13.5/14px Geist, py-11/10, px-22. Dizayn bu yerda boshqacha: mono 11/12px,
