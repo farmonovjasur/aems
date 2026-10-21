@@ -198,14 +198,23 @@ export function Contact() {
                     <span className={`text-[15px] leading-[19px] font-semibold ${ink}`}>
                       {channel.label}
                     </span>
-                    <span className={`text-[14px] leading-[18px] ${muted}`}>{channel.value}</span>
+                    <span className={`text-[14px] leading-[18px] ${muted}`}>
+                      {channel.key === 'email' ||
+                      channel.key === 'telegram' ||
+                      channel.key === 'phoneUz' ||
+                      channel.key === 'phoneIndia' ? (
+                        <bdi dir="ltr">{channel.value}</bdi>
+                      ) : (
+                        channel.value
+                      )}
+                    </span>
                     {channel.note ? (
                       <span className={`text-[13px] leading-[17px] ${muted}`}>{channel.note}</span>
                     ) : null}
                   </span>
 
                   <IconArrow
-                    className={`size-4 shrink-0 transition-transform ease-out-soft duration-(--duration-fast) group-hover/channel:translate-x-0.5 ${muted}`}
+                    className={`size-4 shrink-0 transition-transform ease-out-soft duration-(--duration-fast) group-hover/channel:translate-x-0.5 rtl:group-hover/channel:-translate-x-0.5 ${muted}`}
                   />
                 </a>
               </FadeUp>

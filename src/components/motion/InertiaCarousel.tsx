@@ -1,4 +1,5 @@
 import { Children, useRef, useState, type ReactNode } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useSafeMotion } from '../../hooks/useSafeMotion'
 import { cn } from '../../lib/cn'
 import { useIsomorphicLayoutEffect } from '../../lib/motion'
@@ -77,6 +78,8 @@ export function InertiaCarousel({
   const [overflowing, setOverflowing] = useState(false)
   /** SSR xavfsiz: boshlang'ich `false` (mobil hisob), `sync()` da breakpointga moslanadi. */
   const [isDesktop, setIsDesktop] = useState(false)
+  const { i18n } = useTranslation()
+  const language = i18n.resolvedLanguage ?? i18n.language
   const { ready, reduced, pointerFine } = useSafeMotion()
 
   useIsomorphicLayoutEffect(() => {
@@ -85,8 +88,10 @@ export function InertiaCarousel({
     if (!viewport || !track) return
 
     const desktop = window.matchMedia('(min-width: 768px)')
+    const rtl = i18n.dir(language) === 'rtl'
 
     let snaps: number[] = []
+    let limit = 0
     let overflow = false
     let x = 0
     let velocity = 0
@@ -105,21 +110,21 @@ export function InertiaCarousel({
       track.style.transform = `translate3d(${value}px, 0, 0)`
     }
 
-    /** Har kartaning snap nuqtasi. `translateX` qiymati **manfiy**: karta viewport'ning
-     *  chap chegarasiga kelsa track chapga suriladi, ya'ni `x = trackLeft − card.left`.
-     *  Track `position: static` bo'lgani uchun `offsetLeft` ishlatilmaydi (uning
-     *  `offsetParent` butun sahifa bo'lardi) — farq `getBoundingClientRect` orqali olinadi:
-     *  track ham, kartalar ham bir xil transform'dan siljiganligi uchun natija barqaror.
-     *  Oxirgi kartalar track chegarasidan o'ta olmaydi → `[−limit, 0]` ga qisiladi. */
+    /** Har kartaning snap nuqtasi. LTR: `x = trackLeft − card.left` (0 → −limit).
+     *  RTL: track o'ng chetidan o'lchanadi (0 → +limit), chunki keyingi karta chapda
+     *  va uni ko'rish uchun track o'ngga suriladi. `offsetLeft` ishlatilmaydi —
+     *  `getBoundingClientRect` transformdan keyin ham barqaror natija beradi. */
     const measure = () => {
       const cards = Array.from(track.children) as HTMLElement[]
-      const trackLeft = track.getBoundingClientRect().left
-      const limit = Math.max(0, track.scrollWidth - viewport.clientWidth)
+      const trackRect = track.getBoundingClientRect()
+      limit = Math.max(0, track.scrollWidth - viewport.clientWidth)
       overflow = limit > 1
       setOverflowing(overflow)
-      snaps = cards.map((card) =>
-        Math.min(0, Math.max(-limit, trackLeft - card.getBoundingClientRect().left)),
-      )
+      snaps = cards.map((card) => {
+        const rect = card.getBoundingClientRect()
+        const offset = rtl ? trackRect.right - rect.right : trackRect.left - rect.left
+        return rtl ? Math.min(limit, Math.max(0, offset)) : Math.min(0, Math.max(-limit, offset))
+      })
     }
 
     const cancelFrame = () => {
@@ -202,8 +207,8 @@ export function InertiaCarousel({
       if (desktop.matches) return
       const [first, second] = Array.from(track.children) as HTMLElement[]
       if (!first || !second) return
-      const step = second.offsetLeft - first.offsetLeft || first.offsetWidth
-      const next = Math.round(viewport.scrollLeft / step)
+      const step = Math.abs(second.offsetLeft - first.offsetLeft) || first.offsetWidth
+      const next = Math.round(Math.abs(viewport.scrollLeft) / step)
       setActive(Math.min(slideCount - 1, Math.max(0, next)))
     }
 
@@ -249,10 +254,11 @@ export function InertiaCarousel({
 
     const onPointerMove = (event: PointerEvent) => {
       if (!dragging || event.pointerId !== pointerId) return
-      const edge = snaps.length ? snaps[snaps.length - 1] : 0
+      const min = rtl ? 0 : snaps.length ? snaps[snaps.length - 1] : -limit
+      const max = rtl ? limit : 0
       let next = startOffset + (event.clientX - startX)
-      if (next > 0) next *= RUBBER_BAND
-      else if (next < edge) next = edge + (next - edge) * RUBBER_BAND
+      if (next > max) next = max + (next - max) * RUBBER_BAND
+      else if (next < min) next = min + (next - min) * RUBBER_BAND
 
       x = next
       render(x)
@@ -284,7 +290,8 @@ export function InertiaCarousel({
       if (!desktop.matches || (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight')) return
       event.preventDefault()
       stopTimer()
-      goTo(index + (event.key === 'ArrowRight' ? 1 : -1))
+      const forward = rtl ? 'ArrowLeft' : 'ArrowRight'
+      goTo(index + (event.key === forward ? 1 : -1))
       schedule()
     }
 
@@ -343,7 +350,7 @@ export function InertiaCarousel({
       desktop.removeEventListener('change', sync)
       document.removeEventListener('visibilitychange', visibility)
     }
-  }, [ready, reduced, pointerFine, autoplayMs, itemCount, slideCount])
+  }, [ready, reduced, pointerFine, autoplayMs, itemCount, slideCount, language, i18n])
 
   return (
     <div className={cn('flex flex-col gap-5', className)}>

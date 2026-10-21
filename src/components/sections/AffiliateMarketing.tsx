@@ -97,7 +97,7 @@ function AffiliateCtas() {
         href="#registration"
         variant="primary"
         trailingIcon={
-          <IconArrow className="size-4 shrink-0 transition-transform ease-out-soft duration-(--duration-fast) group-hover/btn:translate-x-0.5" />
+          <IconArrow className="size-4 shrink-0 transition-transform ease-out-soft duration-(--duration-fast) group-hover/btn:translate-x-0.5 rtl:group-hover/btn:-translate-x-0.5" />
         }
         className="w-full justify-center md:w-auto"
         data-testid="affiliate-cta-primary"
@@ -111,7 +111,7 @@ function AffiliateCtas() {
         rel="noreferrer noopener"
         variant="secondary"
         trailingIcon={
-          <IconMessageCircle className="size-4 shrink-0 transition-transform ease-out-soft duration-(--duration-fast) group-hover/btn:translate-x-0.5" />
+          <IconMessageCircle className="size-4 shrink-0 transition-transform ease-out-soft duration-(--duration-fast) group-hover/btn:translate-x-0.5 rtl:group-hover/btn:-translate-x-0.5" />
         }
         className="w-full justify-center md:w-auto"
         data-testid="affiliate-cta-whatsapp"

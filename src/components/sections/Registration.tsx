@@ -350,6 +350,7 @@ export function Registration() {
                     name="name"
                     label={t('registration.form.fullName')}
                     required
+                    dir="auto"
                     autoComplete="name"
                     placeholder={t('registration.form.fullNamePlaceholder')}
                     value={values.fullName}
@@ -409,6 +410,7 @@ export function Registration() {
                     type="email"
                     label={t('registration.form.email')}
                     required
+                    dir="ltr"
                     autoComplete="email"
                     inputMode="email"
                     placeholder={t('registration.form.emailPlaceholder')}
@@ -436,6 +438,7 @@ export function Registration() {
                   id="registration-message"
                   name="message"
                   label={t('registration.form.message')}
+                  dir="auto"
                   placeholder={t('registration.form.messagePlaceholder')}
                   value={values.message}
                   onChange={(event) => update('message', event.target.value)}
@@ -453,7 +456,7 @@ export function Registration() {
                     {t('registration.form.submit')}
                   </Button>
 
-                  <p className="text-center text-[13px] leading-[1.3] text-mid-light md:shrink-0 md:text-left">
+                  <p className="text-center text-[13px] leading-[1.3] text-mid-light md:shrink-0 md:text-start">
                     {t('registration.form.note')}
                   </p>
                 </div>
@@ -465,7 +468,7 @@ export function Registration() {
                   tabIndex={-1}
                   autoComplete="off"
                   aria-hidden="true"
-                  className="pointer-events-none absolute -left-[9999px] size-px opacity-0"
+                  className="pointer-events-none absolute -start-[9999px] size-px opacity-0"
                   value={honeypot}
                   onChange={(event) => setHoneypot(event.target.value)}
                 />

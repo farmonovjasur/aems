@@ -100,7 +100,7 @@ export function CancerTreatment() {
     <section id="cancer-treatment" className="bg-paper-100">
       <Container className="flex flex-col gap-7 py-16 md:gap-11 md:py-4xl">
         <div className="flex flex-col gap-[22px] md:gap-6">
-          <div className="flex flex-col gap-[22px] text-center md:gap-3.5 md:text-left">
+          <div className="flex flex-col gap-[22px] text-center md:gap-3.5 md:text-start">
             <p className="font-mono text-[11px] tracking-[2px] text-stories uppercase md:text-xs">
               {t('cancer.eyebrow')}
             </p>

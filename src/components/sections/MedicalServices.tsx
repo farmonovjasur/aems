@@ -131,7 +131,7 @@ function SpecialtyCard({ specialty, index }: { specialty: Specialty; index: numb
         )}
       >
         {t(`${base}.link`)}
-        <IconArrow className="size-3.5 shrink-0 transition-transform ease-out-soft duration-(--duration-fast) group-hover:translate-x-0.5" />
+        <IconArrow className="size-3.5 shrink-0 transition-transform ease-out-soft duration-(--duration-fast) group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
       </a>
     </article>
   )

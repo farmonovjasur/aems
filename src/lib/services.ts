@@ -25,6 +25,7 @@ export const SERVICES: Service[] = [
       uz: 'Umumiy tibbiy konsultatsiya',
       ru: 'Общая медицинская консультация',
       hi: 'सामान्य चिकित्सा परामर्श',
+      ar: 'استشارة طبية عامة',
     },
   },
   {
@@ -35,6 +36,7 @@ export const SERVICES: Service[] = [
       uz: 'Tibbiy davolash — Kardiologiya',
       ru: 'Медицинское лечение — Кардиология',
       hi: 'चिकित्सा उपचार — कार्डियोलॉजी',
+      ar: 'علاج طبي — طب القلب',
     },
   },
   {
@@ -45,6 +47,7 @@ export const SERVICES: Service[] = [
       uz: 'Tibbiy davolash — Ortopediya',
       ru: 'Медицинское лечение — Ортопедия',
       hi: 'चिकित्सा उपचार — ऑर्थोपेडिक्स',
+      ar: 'علاج طبي — جراحة العظام',
     },
   },
   {
@@ -55,6 +58,7 @@ export const SERVICES: Service[] = [
       uz: 'Tibbiy davolash — Nevrologiya / neyroxirurgiya',
       ru: 'Медицинское лечение — Неврология / нейрохирургия',
       hi: 'चिकित्सा उपचार — न्यूरोलॉजी / न्यूरोसर्जरी',
+      ar: 'علاج طبي — طب الأعصاب / جراحة الأعصاب',
     },
   },
   {
@@ -65,6 +69,7 @@ export const SERVICES: Service[] = [
       uz: 'Tibbiy davolash — Transplantatsiya',
       ru: 'Медицинское лечение — Трансплантация',
       hi: 'चिकित्सा उपचार — ट्रांसप्लांट',
+      ar: 'علاج طبي — زراعة الأعضاء',
     },
   },
   {
@@ -75,6 +80,7 @@ export const SERVICES: Service[] = [
       uz: 'Tibbiy tashxis va check-up',
       ru: 'Медицинская диагностика и чек-ап',
       hi: 'चिकित्सा निदान और स्वास्थ्य जांच',
+      ar: 'التشخيص الطبي والفحص الصحي',
     },
   },
   {
@@ -85,6 +91,7 @@ export const SERVICES: Service[] = [
       uz: 'Ikkinchi tibbiy fikr',
       ru: 'Второе медицинское мнение',
       hi: 'दूसरी चिकित्सा राय',
+      ar: 'رأي طبي ثانٍ',
     },
   },
   {
@@ -95,6 +102,7 @@ export const SERVICES: Service[] = [
       uz: 'Saraton davolash — maqsadli terapiya',
       ru: 'Лечение рака — таргетная терапия',
       hi: 'कैंसर उपचार — लक्षित चिकित्सा',
+      ar: 'علاج السرطان — العلاج الاستهدافي',
     },
   },
   {
@@ -105,6 +113,7 @@ export const SERVICES: Service[] = [
       uz: 'Saraton davolash — Cytotron',
       ru: 'Лечение рака — Цитотрон',
       hi: 'कैंसर उपचार — साइटोट्रॉन',
+      ar: 'علاج السرطان — سايتوترون',
     },
   },
   {
@@ -115,6 +124,7 @@ export const SERVICES: Service[] = [
       uz: 'Saraton davolash — radioterapiya',
       ru: 'Лечение рака — лучевая терапия',
       hi: 'कैंसर उपचार — विकिरण चिकित्सा',
+      ar: 'علاج السرطان — العلاج الإشعاعي',
     },
   },
   {
@@ -125,6 +135,7 @@ export const SERVICES: Service[] = [
       uz: 'Boshqa tibbiy xizmat',
       ru: 'Другая медицинская услуга',
       hi: 'अन्य चिकित्सा सेवा',
+      ar: 'خدمة طبية أخرى',
     },
   },
   {
@@ -135,6 +146,7 @@ export const SERVICES: Service[] = [
       uz: "MBBS qabul — O'zbekiston universitetlari",
       ru: 'Поступление на MBBS — университеты Узбекистана',
       hi: 'MBBS प्रवेश — उज़्बेकिस्तान के विश्वविद्यालय',
+      ar: 'القبول في MBBS — جامعات أوزبكستان',
     },
   },
   {
@@ -145,6 +157,7 @@ export const SERVICES: Service[] = [
       uz: 'Affiliate marketing',
       ru: 'Affiliate-маркетинг',
       hi: 'Affiliate मार्केटिंग',
+      ar: 'التسويق بالعمولة',
     },
   },
   {
@@ -155,6 +168,7 @@ export const SERVICES: Service[] = [
       uz: 'Taklif qiling va daromad oling',
       ru: 'Приведите друга',
       hi: 'Refer & Earn',
+      ar: 'أحِل واربح',
     },
   },
 ]

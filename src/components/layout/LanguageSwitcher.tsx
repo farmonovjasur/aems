@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { LOCALE_ROUTES } from '../../app/routes'
+import { applyLocaleToDocument } from '../../i18n/document'
 import { LANGUAGES, LOCALE_LABELS, type Locale } from '../../i18n/languages'
 import { cn } from '../../lib/cn'
 import { IconChevron } from '../ui/icons'
@@ -9,7 +10,8 @@ const SHORT_LABEL: Record<Locale, string> = {
   en: 'EN',
   uz: 'UZ',
   ru: 'RU',
-  hi: 'HI',
+  hi: 'IN',
+  ar: 'AR',
 }
 
 type LanguageSwitcherProps = {
@@ -29,6 +31,7 @@ function useLocale() {
   const switchTo = (locale: Locale) => {
     if (locale === current) return
     void i18n.changeLanguage(locale)
+    applyLocaleToDocument(locale)
     window.history.replaceState(null, '', LOCALE_ROUTES[locale])
   }
   return { current, switchTo }
@@ -37,6 +40,7 @@ function useLocale() {
 /* F5.4 — Nav'dagi til tugmasi: ⌄ EN pill + dropdown menyu (dizayn: Nav/Actions). */
 function LanguageDropdown({ className }: { className?: string }) {
   const { current, switchTo } = useLocale()
+  const { t } = useTranslation()
   const [open, setOpen] = useState(false)
   const rootRef = useRef<HTMLDivElement>(null)
   const triggerRef = useRef<HTMLButtonElement>(null)
@@ -91,11 +95,11 @@ function LanguageDropdown({ className }: { className?: string }) {
 
       <div
         id="nav-language-menu"
-        className={cn('absolute top-full right-0 z-20 pt-2', !open && 'pointer-events-none')}
+        className={cn('absolute top-full end-0 z-20 pt-2', !open && 'pointer-events-none')}
       >
         <div
           role="menu"
-          aria-label="Language"
+          aria-label={t('common.language')}
           className={cn(
             'flex w-44 flex-col rounded-md border border-white/10 bg-ink-900/95 p-xs shadow-xl backdrop-blur-xl',
             'transition-[opacity,transform] ease-out-soft duration-(--duration-fast)',
@@ -132,11 +136,11 @@ function LanguageDropdown({ className }: { className?: string }) {
                 }
               }}
               className={cn(
-                'flex items-center justify-between gap-md rounded-sm px-md py-2 text-left text-sm transition-colors duration-(--duration-fast) hover:bg-white/[0.06]',
+                'flex items-center justify-between gap-md rounded-sm px-md py-2 text-start text-sm transition-colors duration-(--duration-fast) hover:bg-white/[0.06]',
                 locale === current ? 'text-hi-dark' : 'text-mid-dark',
               )}
             >
-              {LOCALE_LABELS[locale]}
+              <span dir="auto">{LOCALE_LABELS[locale]}</span>
               {locale === current && (
                 <span className="size-1.5 shrink-0 rounded-full bg-brand-500" />
               )}
@@ -155,6 +159,7 @@ export function LanguageSwitcher({
   listColumns = 1,
 }: LanguageSwitcherProps) {
   const { current, switchTo } = useLocale()
+  const { t } = useTranslation()
 
   if (variant === 'dropdown') return <LanguageDropdown className={className} />
 
@@ -168,7 +173,7 @@ export function LanguageSwitcher({
           className,
         )}
         role="group"
-        aria-label="Language"
+        aria-label={t('common.language')}
       >
         {LANGUAGES.map((locale) => (
           <button
@@ -181,7 +186,7 @@ export function LanguageSwitcher({
               locale === current ? 'text-hi-dark' : 'text-mid-dark hover:text-hi-dark',
             )}
           >
-            {LOCALE_LABELS[locale]}
+            <span dir="auto">{LOCALE_LABELS[locale]}</span>
           </button>
         ))}
       </div>
@@ -189,7 +194,11 @@ export function LanguageSwitcher({
   }
 
   return (
-    <div className={cn('flex items-center gap-sm', className)} role="group" aria-label="Language">
+    <div
+      className={cn('flex items-center gap-sm', className)}
+      role="group"
+      aria-label={t('common.language')}
+    >
       {LANGUAGES.map((locale) => (
         <button
           key={locale}

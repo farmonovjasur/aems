@@ -156,6 +156,45 @@ iframe[title*="Netlify"] {
   }
 }
 
+/*
+ * Arabic script typography (§9.7). Bu qoidalar ataylab `@layer` tashqarisida:
+ * Tailwind utility'lari (`tracking-*`, `leading-*`) ustidan ishlashi kerak.
+ */
+:lang(ar) * {
+  /* Harflar orasidagi masofa arabcha bog'lanishni buzadi. */
+  letter-spacing: normal;
+}
+
+:lang(ar) {
+  font-synthesis-style: none;
+}
+
+:lang(ar) :is(em, i) {
+  /* Arab yozuvida sintetik kursiv ishlatilmaydi. */
+  font-style: normal;
+}
+
+:lang(ar) :is(h1, h2, h3, h4, h5, h6) {
+  line-height: 1.25;
+}
+
+:lang(ar) :is(p, li, dd, blockquote) {
+  line-height: 1.75;
+}
+
+:lang(ar) :is(label, button, a) {
+  line-height: 1.4;
+}
+
+:lang(ar) .leading-none {
+  line-height: 1.4;
+}
+
+:lang(ar) [data-cta-mask] {
+  /* Arabcha harflarning yuqori/pastki qismlari kesilmasin. */
+  padding-block: 0.18em;
+}
+
 /* F4.1 — §6.2 #2: reduced-motion'da barchasi 150ms fade'ga tushadi */
 @media (prefers-reduced-motion: reduce) {
   *,

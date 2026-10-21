@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * F2.5 — i18n kalit parity tekshiruvi (§9.7).
- * Manba: src/i18n/locales/en.json. Qolgan 3 til 100% mos bo'lishi shart.
+ * Manba: src/i18n/locales/en.json. Qolgan 4 til 100% mos bo'lishi shart.
  *
  * Ishlatish: npm run check:i18n
  */
@@ -10,15 +10,19 @@ import { join } from 'node:path'
 
 const DIR = join(process.cwd(), 'src', 'i18n', 'locales')
 const SOURCE = 'en'
-const TARGETS = ['uz', 'ru', 'hi']
+const TARGETS = ['uz', 'ru', 'hi', 'ar']
 
-function flattenKeys(value, prefix = '', out = []) {
-  if (value !== null && typeof value === 'object' && !Array.isArray(value)) {
+function flatten(value, prefix = '', out = new Map()) {
+  if (Array.isArray(value)) {
+    out.set(prefix, { kind: 'array', length: value.length })
+    value.forEach((child, index) => flatten(child, `${prefix}[${index}]`, out))
+  } else if (value !== null && typeof value === 'object') {
+    out.set(prefix, { kind: 'object' })
     for (const [key, child] of Object.entries(value)) {
-      flattenKeys(child, prefix ? `${prefix}.${key}` : key, out)
+      flatten(child, prefix ? `${prefix}.${key}` : key, out)
     }
   } else {
-    out.push(prefix)
+    out.set(prefix, { kind: typeof value, value })
   }
   return out
 }
@@ -33,18 +37,42 @@ function load(lang) {
   }
 }
 
-const sourceKeys = new Set(flattenKeys(load(SOURCE)))
+const source = flatten(load(SOURCE))
 let failed = false
 
-console.log(`\n  i18n parity — manba: ${SOURCE}.json (${sourceKeys.size} kalit)`)
+console.log(`\n  i18n parity — manba: ${SOURCE}.json (${source.size} kalit)`)
 
 for (const lang of TARGETS) {
-  const keys = new Set(flattenKeys(load(lang)))
-  const missing = [...sourceKeys].filter((k) => !keys.has(k))
-  const extra = [...keys].filter((k) => !sourceKeys.has(k))
+  const target = flatten(load(lang))
+  const missing = [...source.keys()].filter((key) => !target.has(key))
+  const extra = [...target.keys()].filter((key) => !source.has(key))
+  const mismatched = []
+  const empty = []
 
-  if (missing.length === 0 && extra.length === 0) {
-    console.log(`  ✓ ${lang}.json — parity OK (${keys.size} kalit)`)
+  for (const [key, sourceValue] of source) {
+    const targetValue = target.get(key)
+    if (!targetValue) continue
+
+    if (sourceValue.kind !== targetValue.kind) {
+      mismatched.push(`${key}: ${sourceValue.kind} → ${targetValue.kind}`)
+      continue
+    }
+
+    if (sourceValue.kind === 'array' && sourceValue.length !== targetValue.length) {
+      mismatched.push(`${key}: array ${sourceValue.length} → ${targetValue.length}`)
+    }
+
+    if (sourceValue.kind === 'string') {
+      if (!targetValue.value.trim()) empty.push(key)
+      const sourceVars = new Set(sourceValue.value.match(/{{\s*[\w.]+[^}]*}}/g) ?? [])
+      const targetVars = new Set(targetValue.value.match(/{{\s*[\w.]+[^}]*}}/g) ?? [])
+      const varDiff = [...sourceVars].filter((v) => !targetVars.has(v))
+      if (varDiff.length > 0) mismatched.push(`${key}: interpolatsiya ${varDiff.join(', ')}`)
+    }
+  }
+
+  if (missing.length === 0 && extra.length === 0 && mismatched.length === 0 && empty.length === 0) {
+    console.log(`  ✓ ${lang}.json — parity OK (${target.size} kalit)`)
     continue
   }
 
@@ -52,6 +80,8 @@ for (const lang of TARGETS) {
   console.error(`  ✖ ${lang}.json — parity buzilgan:`)
   for (const k of missing) console.error(`      yetishmaydi: ${k}`)
   for (const k of extra) console.error(`      ortiqcha:    ${k}`)
+  for (const m of mismatched) console.error(`      mos emas:    ${m}`)
+  for (const e of empty) console.error(`      bo'sh:       ${e}`)
 }
 
 if (failed) {

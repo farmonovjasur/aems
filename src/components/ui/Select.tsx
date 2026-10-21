@@ -44,12 +44,12 @@ export function Select({
           required={required}
           aria-invalid={Boolean(error) || undefined}
           aria-describedby={error || success || hint ? messageId : undefined}
-          className={fieldClasses(state, cn(FIELD_HEIGHT, 'appearance-none pr-3xl', className))}
+          className={fieldClasses(state, cn(FIELD_HEIGHT, 'appearance-none pe-3xl', className))}
           {...rest}
         >
           {children}
         </select>
-        <IconChevron className="pointer-events-none absolute top-1/2 right-md size-4 -translate-y-1/2 text-mid-light" />
+        <IconChevron className="pointer-events-none absolute top-1/2 end-md size-4 -translate-y-1/2 text-mid-light" />
       </div>
       <FieldMessage id={messageId} state={error ? 'error' : success ? 'success' : 'hint'}>
         {error ?? success ?? hint}

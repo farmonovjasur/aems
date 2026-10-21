@@ -1,5 +1,6 @@
 import { useRef, type KeyboardEvent, type ReactNode } from 'react'
 import { useIsomorphicLayoutEffect } from '../../lib/motion'
+import { useTranslation } from 'react-i18next'
 import { cn } from '../../lib/cn'
 import { tabButtonId, tabPanelId } from './tab-ids'
 
@@ -52,6 +53,7 @@ export function Tabs({
   className?: string
 }) {
   const buttonRefs = useRef<Array<HTMLButtonElement | null>>([])
+  const { i18n } = useTranslation()
   const listRef = useRef<HTMLDivElement>(null)
   const pillRef = useRef<HTMLSpanElement>(null)
   const activeIndex = tabs.findIndex((tab) => tab.id === value)
@@ -82,8 +84,12 @@ export function Tabs({
     const currentIndex = tabs.findIndex((tab) => tab.id === value)
     let nextIndex = -1
 
-    if (event.key === 'ArrowRight') nextIndex = (currentIndex + 1) % tabs.length
-    else if (event.key === 'ArrowLeft') nextIndex = (currentIndex - 1 + tabs.length) % tabs.length
+    const rtl = i18n.dir() === 'rtl'
+    const nextKey = rtl ? 'ArrowLeft' : 'ArrowRight'
+    const prevKey = rtl ? 'ArrowRight' : 'ArrowLeft'
+
+    if (event.key === nextKey) nextIndex = (currentIndex + 1) % tabs.length
+    else if (event.key === prevKey) nextIndex = (currentIndex - 1 + tabs.length) % tabs.length
     else if (event.key === 'Home') nextIndex = 0
     else if (event.key === 'End') nextIndex = tabs.length - 1
 

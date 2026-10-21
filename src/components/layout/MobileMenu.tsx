@@ -58,15 +58,15 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
 
     const scrollbar = window.innerWidth - document.documentElement.clientWidth
     const previousOverflow = document.body.style.overflow
-    const previousPadding = document.body.style.paddingRight
+    const previousPadding = document.body.style.paddingInlineEnd
     document.body.style.overflow = 'hidden'
-    if (scrollbar > 0) document.body.style.paddingRight = `${scrollbar}px`
+    if (scrollbar > 0) document.body.style.paddingInlineEnd = `${scrollbar}px`
 
     document.addEventListener('keydown', onKeyDown)
     return () => {
       document.removeEventListener('keydown', onKeyDown)
       document.body.style.overflow = previousOverflow
-      document.body.style.paddingRight = previousPadding
+      document.body.style.paddingInlineEnd = previousPadding
       previous?.focus()
     }
   }, [open, onClose])
@@ -93,7 +93,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
         onClick={onClose}
         className="absolute inset-0 overflow-hidden bg-ink-950"
       >
-        <div className="pointer-events-none absolute -top-10 -left-[60px] h-[280px] w-[360px] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(75,107,255,0.30)_0%,rgba(75,107,255,0)_70%)] blur-2xl" />
+        <div className="pointer-events-none absolute -top-10 -start-[60px] h-[280px] w-[360px] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(75,107,255,0.30)_0%,rgba(75,107,255,0)_70%)] blur-2xl" />
       </div>
 
       <div ref={panelRef} className="relative flex h-full flex-col overflow-y-auto p-5">

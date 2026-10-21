@@ -1,6 +1,7 @@
 import { useRef, type KeyboardEvent } from 'react'
 import { cn } from '../../lib/cn'
 import { useIsomorphicLayoutEffect } from '../../lib/motion'
+import { useTranslation } from 'react-i18next'
 
 /*
  * SegmentedField — forma ichidagi segmentli tanlov (Registration · Gender).
@@ -44,6 +45,7 @@ export function SegmentedField({
   className?: string
 }) {
   const buttonRefs = useRef<Array<HTMLButtonElement | null>>([])
+  const { i18n } = useTranslation()
   const listRef = useRef<HTMLDivElement>(null)
   const pillRef = useRef<HTMLSpanElement>(null)
   const activeIndex = options.findIndex((option) => option.id === value)
@@ -73,8 +75,12 @@ export function SegmentedField({
     const currentIndex = options.findIndex((option) => option.id === value)
     let nextIndex = -1
 
-    if (event.key === 'ArrowRight') nextIndex = (currentIndex + 1) % options.length
-    else if (event.key === 'ArrowLeft')
+    const rtl = i18n.dir() === 'rtl'
+    const nextKey = rtl ? 'ArrowLeft' : 'ArrowRight'
+    const prevKey = rtl ? 'ArrowRight' : 'ArrowLeft'
+
+    if (event.key === nextKey) nextIndex = (currentIndex + 1) % options.length
+    else if (event.key === prevKey)
       nextIndex = (currentIndex - 1 + options.length) % options.length
     else if (event.key === 'Home') nextIndex = 0
     else if (event.key === 'End') nextIndex = options.length - 1

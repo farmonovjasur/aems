@@ -13,7 +13,9 @@
     "applyNow": "Ariza berish",
     "register": "Ro'yxatdan o'tish",
     "talkToUs": "Biz bilan bog'laning",
-    "skipToContent": "Kontentga o'tish"
+    "skipToContent": "Kontentga o'tish",
+    "language": "Til",
+    "home": "Bosh sahifa"
   },
   "nav": {
     "about": "Biz haqimizda",

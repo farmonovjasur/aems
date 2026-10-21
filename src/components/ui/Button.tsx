@@ -56,7 +56,7 @@ function ButtonContent({
       {leading}
       <span className="leading-[1.3]">{children}</span>
       {arrow ? (
-        <IconArrow className="shrink-0 transition-transform ease-out-soft duration-(--duration-fast) group-hover/btn:translate-x-0.5" />
+        <IconArrow className="shrink-0 transition-transform ease-out-soft duration-(--duration-fast) group-hover/btn:translate-x-0.5 rtl:group-hover/btn:-translate-x-0.5" />
       ) : (
         trailingIcon
       )}

@@ -304,12 +304,12 @@ export function Nav() {
       <header ref={elRef} className="fixed inset-x-0 top-0 z-40">
         {/* Mobile Navbar: QU0iP in design.pen (358px floating pill, padding [4, 8, 4, 14], blur 20) */}
         <div className="mx-auto w-full px-4 pt-4 xl:hidden">
-          <div className="mx-auto flex h-[52px] max-w-[358px] items-center justify-between rounded-full border border-white/10 bg-white/[0.06] pt-1 pr-2 pb-1 pl-3.5 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]">
+          <div className="mx-auto flex h-[52px] max-w-[358px] items-center justify-between rounded-full border border-white/10 bg-white/[0.06] pt-1 pe-2 pb-1 ps-3.5 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]">
             {/* Brand Wordmark: mbynv in design.pen */}
             <a
               href="#main"
               onClick={(event) => onAnchorClick(event, '#main')}
-              aria-label="AEM — home"
+              aria-label={`AEM — ${t('common.home')}`}
               className="select-none font-display text-[17px] font-extrabold tracking-[1px] text-hi-dark"
             >
               AEM
@@ -349,7 +349,7 @@ export function Nav() {
               <a
                 href="#main"
                 onClick={(event) => onAnchorClick(event, '#main')}
-                aria-label="AEM — home"
+                aria-label={`AEM — ${t('common.home')}`}
                 className="select-none font-display text-[16px] font-bold text-hi-dark transition-colors hover:text-white"
               >
                 AEM

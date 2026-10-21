@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { DEFAULT_LOCALE, LANGUAGES } from '../../i18n/languages'
 import { LOCALE_ROUTES } from '../../app/routes'
 
-/* F2.6 — 4 til + x-default uchun <link rel="alternate"> teglari. */
+/* F2.6 — 5 til + x-default uchun <link rel="alternate"> teglari. */
 export function HreflangTags() {
   useEffect(() => {
     const env = import.meta.env as Record<string, string | undefined>

@@ -21,7 +21,7 @@ export function Marquee({
   reverse = false,
   pauseOnHover = true,
   gapClass = 'gap-xl',
-  padClass = 'pr-xl',
+  padClass = 'pe-xl',
   className,
   trackClassName,
 }: {

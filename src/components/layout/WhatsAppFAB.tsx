@@ -40,7 +40,7 @@ export function WhatsAppFAB() {
   }, [ready, reduced])
 
   return (
-    <div className="fixed right-5 bottom-24 z-50 md:right-6 md:bottom-6">
+    <div className="fixed end-5 bottom-24 z-50 md:end-6 md:bottom-6">
       <a
         href={CONTACT.whatsapp}
         target="_blank"
@@ -56,7 +56,7 @@ export function WhatsAppFAB() {
         <IconWhatsApp className="relative size-6" />
         <span
           aria-hidden="true"
-          className="pointer-events-none absolute right-full mr-3 translate-x-2 rounded-pill bg-ink-900/95 px-3.5 py-2 font-mono text-[11px] tracking-[1.5px] whitespace-nowrap text-hi-dark uppercase opacity-0 ring-1 ring-white/15 transition-[opacity,transform] ease-out-soft duration-(--duration-base) group-hover:translate-x-0 group-hover:opacity-100"
+          className="pointer-events-none absolute end-full me-3 translate-x-2 rtl:-translate-x-2 rounded-pill bg-ink-900/95 px-3.5 py-2 font-mono text-[11px] tracking-[1.5px] whitespace-nowrap text-hi-dark uppercase opacity-0 ring-1 ring-white/15 transition-[opacity,transform] ease-out-soft duration-(--duration-base) group-hover:translate-x-0 group-hover:opacity-100 rtl:group-hover:translate-x-0"
         >
           {t('common.chatWhatsapp')}
         </span>

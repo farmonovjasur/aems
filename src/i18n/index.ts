@@ -4,6 +4,7 @@
  */
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
+import ar from './locales/ar.json'
 import en from './locales/en.json'
 import hi from './locales/hi.json'
 import ru from './locales/ru.json'
@@ -22,6 +23,7 @@ void i18n.use(initReactI18next).init({
     uz: { translation: uz },
     ru: { translation: ru },
     hi: { translation: hi },
+    ar: { translation: ar },
   },
   lng: detectLocale(),
   fallbackLng: DEFAULT_LOCALE,

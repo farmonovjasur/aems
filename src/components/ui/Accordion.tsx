@@ -61,7 +61,7 @@ export function AccordionItem({
           aria-controls={`${id}-panel`}
           onClick={() => setOpen((value) => !value)}
           className={cn(
-            'flex w-full items-center justify-between gap-md rounded-sm px-md py-lg text-left',
+            'flex w-full items-center justify-between gap-md rounded-sm px-md py-lg text-start',
             'transition-colors ease-out-soft duration-(--duration-fast)',
             dark ? 'hover:bg-white/[0.04]' : 'hover:bg-hi-light/[0.04]',
             open && (dark ? 'bg-white/[0.06]' : 'bg-hi-light/[0.06]'),

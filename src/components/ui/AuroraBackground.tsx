@@ -32,18 +32,18 @@ const HERO_LAYERS: AuroraLayer[] = [
   {
     key: 'brand',
     className:
-      'left-[-20%] top-[-60px] h-[87vw] w-[108vw] opacity-60 md:left-[-11%] md:top-[-140px] md:h-[39vw] md:w-[53vw] md:opacity-50',
+      'start-[-20%] top-[-60px] h-[87vw] w-[108vw] opacity-60 md:start-[-11%] md:top-[-140px] md:h-[39vw] md:w-[53vw] md:opacity-50',
     background: disc('var(--color-brand-500)', 67),
   },
   {
     key: 'care',
     className:
-      'left-[31%] top-[240px] h-[82vw] w-[97vw] opacity-55 md:left-[61%] md:top-[-60px] md:h-[36vw] md:w-[49vw] md:opacity-45',
+      'start-[31%] top-[240px] h-[82vw] w-[97vw] opacity-55 md:start-[61%] md:top-[-60px] md:h-[36vw] md:w-[49vw] md:opacity-45',
     background: disc('var(--color-care-500)', 60),
   },
   {
     key: 'edu',
-    className: 'hidden md:block md:left-[18%] md:top-[520px] md:h-[33vw] md:w-[44vw] md:opacity-40',
+    className: 'hidden md:block md:start-[18%] md:top-[520px] md:h-[33vw] md:w-[44vw] md:opacity-40',
     background: disc('var(--color-edu-500)', 40),
   },
 ]
@@ -58,12 +58,12 @@ const HERO_LAYERS: AuroraLayer[] = [
 const CONTACT_LAYERS: AuroraLayer[] = [
   {
     key: 'care',
-    className: 'top-[-80px] left-[180px] size-[300px] lg:hidden',
+    className: 'top-[-80px] start-[180px] size-[300px] lg:hidden',
     background: glow('var(--color-care-500)', 20),
   },
   {
     key: 'brand',
-    className: 'top-[200px] left-[-140px] hidden size-[520px] w-[560px] lg:block',
+    className: 'top-[200px] start-[-140px] hidden size-[520px] w-[560px] lg:block',
     background: glow('var(--color-brand-500)', 30),
   },
 ]

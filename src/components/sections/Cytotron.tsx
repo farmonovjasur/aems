@@ -58,11 +58,11 @@ function Glows() {
     <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
       {/* Mobil: faqat cyan (g4klf mSR2l — 40,-40 · 340×300). Desktop: + violet (120,420 · 560×480). */}
       <div
-        className="absolute left-[40px] top-[-40px] h-[300px] w-[340px] rounded-full md:left-[420px] md:top-[60px] md:h-[520px] md:w-[620px]"
+        className="absolute start-[40px] top-[-40px] h-[300px] w-[340px] rounded-full md:start-[420px] md:top-[60px] md:h-[520px] md:w-[620px]"
         style={{ backgroundImage: glow('var(--color-care-glow)', 33) }}
       />
       <div
-        className="absolute top-[420px] left-[120px] hidden h-[480px] w-[560px] rounded-full md:block"
+        className="absolute top-[420px] start-[120px] hidden h-[480px] w-[560px] rounded-full md:block"
         style={{ backgroundImage: glow('var(--color-care-500)', 30) }}
       />
     </div>
@@ -71,7 +71,7 @@ function Glows() {
 
 function MediaCaption({ children }: { children: ReactNode }) {
   return (
-    <span className="pointer-events-none absolute bottom-4 left-4 rounded-pill bg-ink-950/80 px-[13px] py-[7px] font-mono text-[10px] leading-none tracking-px text-care-glow ring-1 ring-white/[0.14] ring-inset">
+    <span className="pointer-events-none absolute bottom-4 start-4 rounded-pill bg-ink-950/80 px-[13px] py-[7px] font-mono text-[10px] leading-none tracking-px text-care-glow ring-1 ring-white/[0.14] ring-inset">
       {children}
     </span>
   )
@@ -122,7 +122,7 @@ export function Cytotron() {
               {/* Zoom dizayn fill transform'ini takrorlaydi (scaleX 1.1376, chapdan langar).
                   Transform ImageReveal wrapper'ida — GSAP esa faqat ichki <img> ni boshqaradi. */}
               <ImageReveal
-                wrapperClassName="h-full w-full md:origin-left md:scale-x-[1.1376]"
+                wrapperClassName="h-full w-full md:rtl:origin-right md:scale-x-[1.1376]"
                 width={1500}
                 height={1500}
                 alt={t('cytotron.media.altRadiology')}
@@ -136,7 +136,7 @@ export function Cytotron() {
 
             <div className="relative h-[200px] w-full overflow-hidden rounded-md ring-1 ring-white/10 ring-inset md:-top-[18px] md:h-[448px] md:w-1/2 md:rounded-none md:ring-0">
               <ImageReveal
-                wrapperClassName="h-full w-full md:origin-left md:scale-x-[1.5168]"
+                wrapperClassName="h-full w-full md:rtl:origin-right md:scale-x-[1.5168]"
                 width={2500}
                 height={1875}
                 alt={t('cytotron.media.altDevice')}
@@ -196,7 +196,7 @@ export function Cytotron() {
                   {isLast ? null : <span className="mt-1.5 h-[30px] w-[2px] bg-white/12" />}
                 </span>
 
-                <span className="flex flex-1 items-center gap-2.5 pt-1 pl-1 md:hidden">
+                <span className="flex flex-1 items-center gap-2.5 pt-1 ps-1 md:hidden">
                   <Icon className="size-4 shrink-0 text-care-glow" />
                   <span className="text-[15px] leading-[1.25] text-hi-dark">{step}</span>
                 </span>
@@ -279,7 +279,7 @@ export function Cytotron() {
               rel="noreferrer noopener"
               variant="secondary"
               trailingIcon={
-                <IconMessageCircle className="size-4 shrink-0 transition-transform ease-out-soft duration-(--duration-fast) group-hover/btn:translate-x-0.5" />
+                <IconMessageCircle className="size-4 shrink-0 transition-transform ease-out-soft duration-(--duration-fast) group-hover/btn:translate-x-0.5 rtl:group-hover/btn:-translate-x-0.5" />
               }
               className="w-full justify-center md:w-auto md:justify-center"
               data-testid="cytotron-cta-whatsapp"
@@ -303,7 +303,7 @@ export function Cytotron() {
             decoding="async"
             className="size-14 shrink-0 rounded-full object-cover md:size-16"
           />
-          <div className="flex flex-1 flex-col gap-1 text-center md:text-left">
+          <div className="flex flex-1 flex-col gap-1 text-center md:text-start">
             <p className="text-[14.5px] leading-[1.25] font-semibold text-balance text-hi-dark md:text-[15px]">
               {trustTitle}
             </p>

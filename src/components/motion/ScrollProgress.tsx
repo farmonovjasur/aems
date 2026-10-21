@@ -38,7 +38,7 @@ export function ScrollProgress({ className }: { className?: string }) {
       ref={ref}
       aria-hidden="true"
       className={cn(
-        'fixed inset-x-0 top-0 z-[60] h-0.5 origin-left bg-linear-to-r from-brand-500 to-care-glow',
+        'fixed inset-x-0 top-0 z-[60] h-0.5 origin-left bg-linear-to-r rtl:origin-right rtl:bg-linear-to-l from-brand-500 to-care-glow',
         className,
       )}
     />

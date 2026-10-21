@@ -103,7 +103,7 @@ export function TrustMarquee() {
       />
 
       <div className="hidden flex-col gap-3.5 py-9 md:flex">
-        <Marquee duration={40} gapClass="gap-3.5" padClass="pr-3.5">
+        <Marquee duration={40} gapClass="gap-3.5" padClass="pe-3.5">
           {badges.map(({ label, Icon }) => (
             <MarqueeBadge key={label} Icon={Icon}>
               {label}
@@ -111,7 +111,7 @@ export function TrustMarquee() {
           ))}
         </Marquee>
 
-        <Marquee duration={40} reverse gapClass="gap-3.5" padClass="pr-3.5">
+        <Marquee duration={40} reverse gapClass="gap-3.5" padClass="pe-3.5">
           <span aria-hidden="true" className="h-px w-px shrink-0" />
           {row2.map(({ label, Icon }) => (
             <MarqueeBadge key={label} Icon={Icon}>
@@ -138,7 +138,7 @@ export function TrustMarquee() {
         </div>
 
         <div className="relative" role="group" aria-label={t('trust.badgesLabel')}>
-          <Marquee duration={40} gapClass="gap-2" padClass="pr-2">
+          <Marquee duration={40} gapClass="gap-2" padClass="pe-2">
             {badges.map(({ label, Icon }) => (
               <StripBadge key={label} Icon={Icon}>
                 {label}
@@ -147,7 +147,7 @@ export function TrustMarquee() {
           </Marquee>
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-y-0 right-0 w-11 bg-linear-to-r from-transparent to-ink-900"
+            className="pointer-events-none absolute inset-y-0 end-0 w-11 bg-linear-to-r from-transparent to-ink-900 rtl:bg-linear-to-l"
           />
         </div>
       </div>

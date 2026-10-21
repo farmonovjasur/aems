@@ -13,7 +13,9 @@
     "applyNow": "Apply Now",
     "register": "Register",
     "talkToUs": "Talk to us",
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "language": "Language",
+    "home": "Home"
   },
   "nav": {
     "about": "About us",

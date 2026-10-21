@@ -44,7 +44,7 @@ export function App() {
       <HreflangTags />
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-lg focus:top-lg focus:z-50 focus:rounded-sm focus:bg-brand-600 focus:px-lg focus:py-sm focus:text-hi-dark"
+        className="sr-only focus:not-sr-only focus:absolute focus:start-lg focus:top-lg focus:z-50 focus:rounded-sm focus:bg-brand-600 focus:px-lg focus:py-sm focus:text-hi-dark"
       >
         {t('common.skipToContent')}
       </a>

@@ -234,7 +234,7 @@ function MessToggle() {
       aria-hidden="true"
       className="relative hidden h-6 w-10 shrink-0 rounded-pill bg-brand-500 md:block"
     >
-      <span className="absolute top-[3px] right-[3px] size-[18px] rounded-pill bg-white" />
+      <span className="absolute top-[3px] end-[3px] size-[18px] rounded-pill bg-white" />
     </span>
   )
 }

@@ -89,7 +89,7 @@ function MedicalCard({ className }: { className?: string }) {
     >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-[70px] -right-[60px] hidden size-[220px] rounded-full xl:block"
+        className="pointer-events-none absolute -top-[70px] -end-[60px] hidden size-[220px] rounded-full xl:block"
         style={{
           backgroundImage:
             'radial-gradient(closest-side, color-mix(in srgb, var(--color-care-glow) 53%, transparent) 0%, transparent 100%)',

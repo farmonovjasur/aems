@@ -116,7 +116,7 @@ function MobileGroup({ title, children }: { title: string; children: ReactNode }
           aria-expanded={open}
           aria-controls={id}
           onClick={() => setOpen((value) => !value)}
-          className="flex min-h-11 w-full items-center justify-between gap-md text-left"
+          className="flex min-h-11 w-full items-center justify-between gap-md text-start"
         >
           <span className={COLUMN_TITLE_CLASS}>{title}</span>
           <IconPlus
@@ -215,7 +215,7 @@ function CTATitle({ text, className }: { text: string; className?: string }) {
     <h2 ref={ref} className={className}>
       {wordList.map((word, index) => (
         <span key={`${word}-${index}`}>
-          <span className="inline-block overflow-hidden pb-[0.12em] align-bottom">
+          <span data-cta-mask className="inline-block overflow-hidden pb-[0.12em] align-bottom">
             <span data-cta-word className="inline-block">
               {word}
             </span>
@@ -473,7 +473,7 @@ export function Footer() {
       key: 'email',
       node: (
         <a href={`mailto:${CONTACT.email}`} className={LINK_CLASS}>
-          {CONTACT.email}
+          <bdi dir="ltr">{CONTACT.email}</bdi>
         </a>
       ),
     },
@@ -481,7 +481,7 @@ export function Footer() {
       key: 'phoneUz',
       node: (
         <a href={`tel:${CONTACT.phoneUz}`} className={LINK_CLASS}>
-          {CONTACT.phoneUzDisplay}
+          <bdi dir="ltr">{CONTACT.phoneUzDisplay}</bdi>
         </a>
       ),
     },
@@ -489,7 +489,7 @@ export function Footer() {
       key: 'phoneIndia',
       node: (
         <a href={`tel:${CONTACT.phoneIndia}`} className={LINK_CLASS}>
-          {CONTACT.phoneIndiaDisplay}
+          <bdi dir="ltr">{CONTACT.phoneIndiaDisplay}</bdi>
         </a>
       ),
     },

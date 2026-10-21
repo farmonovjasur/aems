@@ -1,4 +1,5 @@
 import type { SVGProps } from 'react'
+import { cn } from '../../lib/cn'
 
 /*
  * F3 — inline ikonkalar (kutubxona yo'q, bundle'ni yengil saqlash uchun).
@@ -17,7 +18,7 @@ export function IconArrow({ className, ...props }: SVGProps<SVGSVGElement>) {
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
-      className={className}
+      className={cn('rtl:-scale-x-100', className)}
       {...props}
     >
       <path d="M2.5 8h11" />
@@ -99,7 +100,7 @@ export function IconChevronRight({ className, ...props }: SVGProps<SVGSVGElement
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
-      className={className}
+      className={cn('rtl:-scale-x-100', className)}
       {...props}
     >
       <path d="m6 3.5 4.5 4.5L6 12.5" />
