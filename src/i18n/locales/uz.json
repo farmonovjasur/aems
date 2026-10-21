@@ -35,16 +35,23 @@
   },
   "hero": {
     "eyebrow": "AMIGOS EN MUNDO — 2026-YILDAN · BUXORO",
-    "titleLine1": "Ikki yo'nalish.",
-    "titleAccent": "Bitta",
-    "titleLine2": "ishonchli hamkor.",
+    "titleLine1": "Hammasi bir joyda:",
+    "titleAccent": "Salomatlik,",
+    "titleLine2": "boylik va ta'lim",
     "sub": "Qabuldan yetib borishgacha — talabalar va oilalarga har bir qadamda hamroh bo'lamiz.",
+    "servicesTitle": "Xizmatlarimiz",
+    "affiliate": {
+      "title": "Affiliate marketing",
+      "chip": "AFILIAT",
+      "line": "Biznesingizni yuksaltiramiz",
+      "link": "Affiliate marketingni ko'rish"
+    },
     "education": {
-      "title": "O'zbekistonda MBBS",
+      "title": "O'zbekistonda tibbiy ta'lim",
       "chip": "TA'LIM",
       "meta": "Yiliga $2,900 dan · WHO · NMC tan olgan",
       "line": "6 yillik, ingliz tilida o'qitiladigan dastur",
-      "link": "MBBS dasturini ko'rish"
+      "link": "Tibbiy ta'limni ko'rish"
     },
     "care": {
       "title": "Hindistonda saraton davolash",
@@ -150,8 +157,7 @@
         "title": "Ta'sir masofasi",
         "lu177": "bir necha millimetrgacha",
         "tb161": "juda qisqa masofa, kuchli lokal doza",
-        "ac225": "bir necha hujayra kengligi",
-        "note": "Tasviriy, masshtabsiz"
+        "ac225": "bir necha hujayra kengligi"
       }
     }
   },
@@ -542,7 +548,7 @@
   },
   "testimonials": {
     "eyebrow": "HIKOYALAR",
-    "title": "Yo'l ko'rsatgan talabalar va oilalar",
+    "title": "Mijozlar fikri va biz yo'l ko'rsatganlar",
     "swipe": "SURING →",
     "items": [
       {
@@ -577,7 +583,7 @@
     "next": {
       "title": "KEYIN NIMA BO'LADI",
       "steps": [
-        "Arizangizni ko'rib chiqamiz",
+        "Tibbiy hisobotingizni ko'rib chiqamiz",
         "Mutaxassis 24 soat ichida siz bilan bog'lanadi",
         "Bepul 30 daqiqalik konsultatsiya"
       ]
@@ -637,7 +643,7 @@
     "emailLabel": "Email",
     "email": "amigosenmundo.med@gmail.com",
     "telegramLabel": "Telegram",
-    "telegram": "@amigosenmundo"
+    "telegram": "@umid_nurov"
   },
   "footer": {
     "ctaTitle": "Boshlashga tayyormisiz?",

@@ -11,6 +11,7 @@ import { Section } from '../ui/Section'
 import {
   IconArrow,
   IconCheck,
+  IconGlobe,
   IconGraduationCap,
   IconHeartPulse,
   IconMessageCircle,
@@ -24,7 +25,7 @@ import {
  * O'lchovlar/typografiya/opacity — design.pen'dan 1:1 (motion qatlami F7'da).
  */
 
-type PanelTone = 'mint' | 'violet'
+type PanelTone = 'mint' | 'violet' | 'gold'
 
 type PanelConfig = {
   tone: PanelTone
@@ -46,6 +47,11 @@ const PANEL_ACCENT: Record<PanelTone, { border: string; surface: string; text: s
     border: 'border-care-500/25',
     surface: 'bg-linear-to-b from-panel-care-from to-panel-care-to',
     text: 'md:text-care-500',
+  },
+  gold: {
+    border: 'border-gold-500/25',
+    surface: 'bg-linear-to-b from-panel-gold-from to-panel-gold-to',
+    text: 'md:text-gold-500',
   },
 }
 
@@ -96,6 +102,15 @@ export function Hero() {
   const { t } = useTranslation()
 
   const panels: PanelConfig[] = [
+    {
+      tone: 'gold',
+      hash: '#affiliate-marketing',
+      Icon: IconGlobe,
+      chip: t('hero.affiliate.chip'),
+      title: t('hero.affiliate.title'),
+      bullets: [t('hero.affiliate.line')],
+      link: t('hero.affiliate.link'),
+    },
     {
       tone: 'mint',
       hash: '#admission',
@@ -161,10 +176,16 @@ export function Hero() {
         </div>
       </Container>
 
-      <Container className="relative grid gap-3.5 md:grid-cols-2 md:gap-lg">
-        {panels.map((panel) => (
-          <SplitPanel key={panel.tone} {...panel} />
-        ))}
+      <Container className="relative flex flex-col gap-3.5 md:gap-lg">
+        <h2 className="text-center font-display text-[22px] leading-[1.1] font-bold text-hi-dark md:text-[32px]">
+          {t('hero.servicesTitle')}
+        </h2>
+
+        <div className="grid gap-3.5 md:grid-cols-2 md:gap-lg lg:grid-cols-3">
+          {panels.map((panel) => (
+            <SplitPanel key={panel.tone} {...panel} />
+          ))}
+        </div>
       </Container>
 
       <Container className="relative hidden grid-cols-3 gap-5 md:grid">

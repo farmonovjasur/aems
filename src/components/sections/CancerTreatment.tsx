@@ -177,17 +177,15 @@ export function CancerTreatment() {
           </div>
 
           <div className={cn('flex flex-col gap-4 rounded-md p-5', CARD_SURFACE)}>
-            <div className="flex items-center justify-between gap-4">
-              <h3 className="font-display text-[16px] leading-[1.2] font-semibold text-hi-light md:text-[20px] md:font-bold">
-                {t('cancer.targeted.penetration.title')}
-              </h3>
-              <p className="shrink-0 font-mono text-[10px] text-mid-light md:text-[11px] md:tracking-[1px]">
-                {t('cancer.targeted.penetration.note')}
-              </p>
-            </div>
+            <h3 className="font-display text-[16px] leading-[1.2] font-semibold text-hi-light md:text-[20px] md:font-bold">
+              {t('cancer.targeted.penetration.title')}
+            </h3>
 
             {RANGES.map((range, index) => (
-              <div key={range.key} className="flex flex-col gap-2 md:flex-row md:items-center md:gap-4">
+              <div
+                key={range.key}
+                className="flex flex-col gap-2 md:flex-row md:items-center md:gap-4"
+              >
                 {/* Desktop: symbol 72px · track · label 300px (bitta qator). */}
                 <span className="hidden w-[72px] shrink-0 font-mono text-[13px] font-bold text-hi-light md:block">
                   {isotopes[index]?.symbol}

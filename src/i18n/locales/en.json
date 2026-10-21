@@ -35,16 +35,23 @@
   },
   "hero": {
     "eyebrow": "AMIGOS EN MUNDO — EST. 2026 · BUKHARA",
-    "titleLine1": "Two frontiers.",
-    "titleAccent": "One",
-    "titleLine2": "trusted partner.",
+    "titleLine1": "All in one:",
+    "titleAccent": "Health,",
+    "titleLine2": "wealth and Education",
     "sub": "From admission to arrival — we guide students and families every step of the way.",
+    "servicesTitle": "Our Services",
+    "affiliate": {
+      "title": "Affiliate marketing",
+      "chip": "AFFILIATE",
+      "line": "Boosting your business",
+      "link": "Explore affiliate marketing"
+    },
     "education": {
-      "title": "MBBS in Uzbekistan",
+      "title": "Medical degree in Uzbekistan",
       "chip": "EDUCATION",
       "meta": "From $2,900 / year · WHO · NMC recognised",
       "line": "6-year program taught in English",
-      "link": "Explore MBBS"
+      "link": "Explore Medical degree"
     },
     "care": {
       "title": "Cancer treatment in India",
@@ -150,8 +157,7 @@
         "title": "Penetration range",
         "lu177": "up to a few millimeters",
         "tb161": "extremely short range, high local dose",
-        "ac225": "a few cell widths",
-        "note": "Illustrative, not to scale"
+        "ac225": "a few cell widths"
       }
     }
   },
@@ -530,7 +536,7 @@
   },
   "testimonials": {
     "eyebrow": "STORIES",
-    "title": "Students and families we've guided",
+    "title": "Customer feedback & we have guided",
     "swipe": "SWIPE →",
     "items": [
       {
@@ -565,7 +571,7 @@
     "next": {
       "title": "WHAT HAPPENS NEXT",
       "steps": [
-        "We review your request",
+        "We will review your medical report",
         "A specialist contacts you within 24 hours",
         "Free 30-minute consultation"
       ]
@@ -625,7 +631,7 @@
     "emailLabel": "Email",
     "email": "amigosenmundo.med@gmail.com",
     "telegramLabel": "Telegram",
-    "telegram": "@amigosenmundo"
+    "telegram": "@umid_nurov"
   },
   "footer": {
     "ctaTitle": "Ready to start?",

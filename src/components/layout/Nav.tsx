@@ -40,7 +40,7 @@ const CANCER_ITEMS = [
   },
 ]
 
-function CancerDropdown({ isActive }: { isActive: boolean }) {
+function CancerDropdown({ isActive, onActivate }: { isActive: boolean; onActivate: () => void }) {
   const { t } = useTranslation()
   const [open, setOpen] = useState(false)
   const rootRef = useRef<HTMLDivElement>(null)
@@ -139,6 +139,7 @@ function CancerDropdown({ isActive }: { isActive: boolean }) {
                 href={item.hash}
                 onClick={(event) => {
                   setOpen(false)
+                  onActivate()
                   onAnchorClick(event, item.hash)
                 }}
                 onKeyDown={(event) => {
@@ -224,7 +225,7 @@ export function Nav() {
   const { t } = useTranslation()
   const { ready, reduced } = useSafeMotion()
   const [menuOpen, setMenuOpen] = useState(false)
-  const [activeKey, setActiveKey] = useState('about')
+  const [activeKey, setActiveKey] = useState<string | null>(null)
   const elRef = useRef<HTMLElement>(null)
   const closeMenu = useCallback(() => setMenuOpen(false), [])
 
@@ -234,13 +235,10 @@ export function Nav() {
       const match = NAV_LINKS.find((l) => {
         const linkId = l.hash.replace(/^#/, '')
         return (
-          linkId === hash ||
-          (hash && linkId.startsWith(hash)) ||
-          (hash && hash.startsWith(linkId))
+          linkId === hash || (hash && linkId.startsWith(hash)) || (hash && hash.startsWith(linkId))
         )
       })
       if (match) setActiveKey(match.key)
-      else if (!hash) setActiveKey('about')
     }
     resolveActive()
     const onHashChange = () => resolveActive()
@@ -340,15 +338,27 @@ export function Nav() {
             <nav aria-label={t('nav.menu')} className="flex items-center gap-8">
               {NAV_LINKS.map((link) =>
                 link.key === 'cancer' ? (
-                  <CancerDropdown key={link.key} isActive={activeKey === 'cancer'} />
+                  <CancerDropdown
+                    key={link.key}
+                    isActive={activeKey === 'cancer'}
+                    onActivate={() => setActiveKey('cancer')}
+                  />
                 ) : (
-                  <div key={link.key} className="group relative flex flex-col items-center gap-2 pb-1 pt-1">
+                  <div
+                    key={link.key}
+                    className="group relative flex flex-col items-center gap-2 pb-1 pt-1"
+                  >
                     <a
                       href={link.hash}
-                      onClick={(event) => onAnchorClick(event, link.hash)}
+                      onClick={(event) => {
+                        setActiveKey(link.key)
+                        onAnchorClick(event, link.hash)
+                      }}
                       className={cn(
                         'text-[14px] font-medium transition-colors duration-(--duration-fast) ease-out-soft',
-                        activeKey === link.key ? 'text-hi-dark' : 'text-white/72 hover:text-hi-dark',
+                        activeKey === link.key
+                          ? 'text-hi-dark'
+                          : 'text-white/72 hover:text-hi-dark',
                       )}
                     >
                       {t(`nav.${link.key}`)}

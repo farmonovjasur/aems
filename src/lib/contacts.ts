@@ -5,7 +5,7 @@
  */
 export const CONTACT = {
   whatsapp: 'https://wa.me/998936566889',
-  telegram: 'https://t.me/amigosenmundo',
+  telegram: 'https://t.me/umid_nurov',
   email: 'amigosenmundo.med@gmail.com',
   phoneUz: '+998936566889',
   phoneUzDisplay: '+998 93 656 68 89',

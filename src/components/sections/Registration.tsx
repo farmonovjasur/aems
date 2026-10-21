@@ -1,4 +1,4 @@
-import { useRef, useState, type FormEvent } from 'react'
+import { useMemo, useRef, useState, type FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import { gsap } from 'gsap'
 import { useSafeMotion } from '../../hooks/useSafeMotion'
@@ -157,6 +157,11 @@ export function Registration() {
   const [errors, setErrors] = useState<Partial<Record<FieldName, string>>>({})
   const [status, setStatus] = useState<Status>('idle')
   const [honeypot, setHoneypot] = useState('')
+
+  const countryOptions = useMemo(
+    () => [...COUNTRIES].sort((a, b) => a.names[locale].localeCompare(b.names[locale], locale)),
+    [locale],
+  )
 
   const steps = t('registration.next.steps', { returnObjects: true }) as unknown as string[]
   const genders = [
@@ -350,7 +355,7 @@ export function Registration() {
                     className={values.country ? undefined : 'text-mid-light'}
                   >
                     <option value="">{t('registration.form.countryPlaceholder')}</option>
-                    {COUNTRIES.map((country) => (
+                    {countryOptions.map((country) => (
                       <option key={country.code} value={country.code}>
                         {country.names[locale]}
                       </option>
